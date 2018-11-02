@@ -10,16 +10,21 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1996338,      32831]
-NotebookOptionsPosition[   1992725,      32762]
-NotebookOutlinePosition[   1993120,      32779]
-CellTagsIndexPosition[   1993077,      32776]
+NotebookDataLength[   2045741,      33839]
+NotebookOptionsPosition[   2043227,      33789]
+NotebookOutlinePosition[   2043623,      33806]
+CellTagsIndexPosition[   2043580,      33803]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+Cell[BoxData["   "], "Input",
+ CellChangeTimes->{{3.749356673093215*^9, 
+  3.749356673624322*^9}},ExpressionUUID->"2f412c3e-bef4-4ae5-9ae4-\
+d53c08ee1197"],
 
 Cell[CellGroupData[{
+
 Cell[BoxData[
  RowBox[{"birds", "=", " ", 
   RowBox[{"CloudExpression", "[", "\"\<birds\>\"", "]"}]}]], "Input",
@@ -27,7 +32,7 @@ Cell[BoxData[
    3.748983914317077*^9, 3.7489839217671413`*^9}, 3.748991456487193*^9, {
    3.7490281208594036`*^9, 3.7490281210002637`*^9}, 3.749073104214594*^9, {
    3.7490744829236126`*^9, 3.749074504035747*^9}},
- CellLabel->"In[20]:=",ExpressionUUID->"e719fceb-8d0b-4af7-b0fc-089af7b8e3ab"],
+ CellLabel->"In[13]:=",ExpressionUUID->"e719fceb-8d0b-4af7-b0fc-089af7b8e3ab"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -327,8 +332,9 @@ birds"],
   Selectable->False]], "Output",
  CellChangeTimes->{3.7490731160147867`*^9, 3.7490745256277695`*^9, 
   3.7491619659189005`*^9, 3.7491620053892612`*^9, 3.749162834146572*^9, 
-  3.7491631914227676`*^9},
- CellLabel->"Out[20]=",ExpressionUUID->"4c8e746b-4409-4e7c-af2e-6db46ba9e575"]
+  3.7491631914227676`*^9, 3.7493331967639203`*^9, 3.749333411016924*^9, 
+  3.7493567375400887`*^9, 3.750124569564087*^9, 3.7501250424710703`*^9},
+ CellLabel->"Out[13]=",ExpressionUUID->"b930e9f6-7bb6-43da-a50a-ceed1b30b51b"]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -387,13 +393,7 @@ coordinates {x,y} if on pc\>\""}], ",", "\n", "\t",
           RowBox[{"\"\<Interpreter\>\"", "\[Rule]", " ", "\"\<Location\>\""}],
            ",", "\n", "\t", 
           RowBox[{"\"\<Default\>\"", "\[Rule]", "Here"}]}], "|>"}]}], ",", 
-       "\n", "\t", "\[IndentingNewLine]", 
-       RowBox[{
-        RowBox[{"{", 
-         RowBox[{
-         "\"\<area\>\"", ",", 
-          "\"\<Estimated Area of the observation zone (m^2)\>\""}], "}"}], 
-        "\[Rule]", " ", "\"\<Integer\>\""}], ",", "\n", "\[IndentingNewLine]", 
+       "\n", "\[IndentingNewLine]", 
        RowBox[{"\"\<feeder\>\"", "\[Rule]", 
         RowBox[{"<|", "\n", "\t", 
          RowBox[{
@@ -461,19 +461,6 @@ coordinates {x,y} if on pc\>\""}], ",", "\n", "\t",
               "\n", "\t\t", 
               RowBox[{"\"\<Control\>\"", "\[Rule]", "RadioButtonBar"}]}], 
              "|>"}]}], ",", "\[IndentingNewLine]", "\t", 
-           RowBox[{"\"\<when\>\"", "\[Rule]", " ", 
-            RowBox[{"<|", 
-             RowBox[{"\"\<Interpreter\>\"", "\[Rule]", 
-              RowBox[{"AnySubset", "[", 
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"\"\<Not at all\>\"", "\[Rule]", "0"}], ",", 
-                 RowBox[{"\"\<During 1st session\>\"", "\[Rule]", "1"}], ",", 
-                 RowBox[{"\"\<During 2nd session\>\"", "\[Rule]", " ", "2"}], 
-                 ",", 
-                 RowBox[{
-                 "\"\<During 3rd session\>\"", "\[Rule]", " ", "3"}]}], "}"}],
-                "]"}]}], "|>"}]}], ",", "\[IndentingNewLine]", "\t", 
            RowBox[{"\"\<how\>\"", "\[Rule]", 
             RowBox[{"<|", 
              RowBox[{
@@ -511,8 +498,7 @@ coordinates {x,y} if on pc\>\""}], ",", "\n", "\t",
          RowBox[{
           RowBox[{
           "\"\<Label\>\"", "\[Rule]", 
-           "\"\<what birds did you see in the first 10min- session?\>\""}], 
-          ",", 
+           "\"\<what birds did you see in the 10min- session?\>\""}], ",", 
           RowBox[{"\"\<Interpreter\>\"", "\[Rule]", " ", 
            RowBox[{"CompoundElement", "[", 
             RowBox[{"<|", "\[IndentingNewLine]", 
@@ -526,9 +512,11 @@ coordinates {x,y} if on pc\>\""}], ",", "\n", "\t",
                  RowBox[{
                  "\"\<Interpreter\>\"", "\[Rule]", "\"\<Integer\>\""}], ",", 
                  RowBox[{"\"\<Default\>\"", "\[Rule]", " ", "0"}], ",", " ", 
-                 RowBox[{"\"\<Help\>\"", "\[Rule]", " ", 
-                  GraphicsBox[
-                   TagBox[RasterBox[CompressedData["
+                 RowBox[{"\"\<Help\>\"", "\[Rule]", 
+                  RowBox[{"ImageResize", "[", " ", 
+                   RowBox[{
+                    GraphicsBox[
+                    TagBox[RasterBox[CompressedData["
 1:eJyU3Ad3W9edLvzMnUm1U9x7bMc1cRLbSZzY6hIlqvderd67xN577x0ECBKF
 IAoBkCAJAkQvRAcIsICdYKck25mZ+36A9zlnU7BiJ3PvXevJXpuHtKxI/OH5
 73NAv3321r6L/+sHP/jBvZ9g2XcmZv3du2fi9v8KHxy8ee/KpZsXzm+9ef/C
@@ -6026,24 +6014,26 @@ WrVlyl4h78LEM0A3KCalDt4c3L4QXWghQMqzVUjrJktDvDXjQfv/+2sY+g==
                     BoxForm`ImageTag[
                     "Byte", ColorSpace -> "RGB", Interleaving -> True],
                     Selectable->False],
-                   DefaultBaseStyle->"ImageGraphics",
-                   ImageSize->Automatic,
-                   ImageSizeRaw->{330, 307},
-                   PlotRange->{{0, 330}, {0, 307}}]}]}], "|>"}]}], ",", 
-              "\[IndentingNewLine]", 
+                    DefaultBaseStyle->"ImageGraphics",
+                    ImageSize->Automatic,
+                    ImageSizeRaw->{330, 307},
+                    PlotRange->{{0, 330}, {0, 307}}], ",", "100"}], "]"}]}]}],
+                 "|>"}]}], ",", "\[IndentingNewLine]", 
               RowBox[{"\"\<s2\>\"", "\[Rule]", " ", 
                RowBox[{"<|", 
                 RowBox[{
                  RowBox[{
-                 "\"\<Label\>\"", "\[Rule]", " ", 
+                 "\"\<Label\>\"", "\[Rule]", 
                   "\"\<Eastern buzzard, Buteo \
 japonicus\!\(\*StyleBox[\"\\\"\",FontSlant->\"Italic\"]\)"}], ",", 
                  RowBox[{
                  "\"\<Interpreter\>\"", "\[Rule]", "\"\<Integer\>\""}], ",", 
                  RowBox[{"\"\<Default\>\"", "\[Rule]", " ", "0"}], ",", " ", 
-                 RowBox[{"\"\<Help\>\"", "\[Rule]", " ", 
-                  GraphicsBox[
-                   TagBox[RasterBox[CompressedData["
+                 RowBox[{"\"\<Help\>\"", "\[Rule]", 
+                  RowBox[{"ImageResize", "[", " ", 
+                   RowBox[{
+                    GraphicsBox[
+                    TagBox[RasterBox[CompressedData["
 1:eJzsvYdXG1m+76u23c7GxuScc84SCBRASAghEDnnnHMGm6SsKpVyIDt2nJ7u
 mZ6eOTPnnXvveue+8+59b633H71dVaJcKCEwDj3jtb7eq1QqCuGlT/3C/u3f
 juqdqh28QaFQ5u6CobZniTU727NS9wS8aJicGxmaHOivmJwfGBqYpfbeBCf5
@@ -8347,21 +8337,21 @@ LolwSS4CfydE7yADZFlWFHV4dDyVreRKu5Xdr9YrO63751+6/6X7H0P3/wEf
                     BoxForm`ImageTag[
                     "Byte", ColorSpace -> "RGB", Interleaving -> True],
                     Selectable->False],
-                   DefaultBaseStyle->"ImageGraphics",
-                   ImageSize->Automatic,
-                   ImageSizeRaw->{330, 330},
-                   PlotRange->{{0, 330}, {0, 330}}]}]}], "|>"}]}]}], 
-             "\[IndentingNewLine]", "|>"}], "]"}]}]}], " ", "|>"}]}]}], 
-      "\[IndentingNewLine]", "\[IndentingNewLine]", "}"}], ",", 
-     "\[IndentingNewLine]", 
+                    DefaultBaseStyle->"ImageGraphics",
+                    ImageSize->Automatic,
+                    ImageSizeRaw->{330, 330},
+                    PlotRange->{{0, 330}, {0, 330}}], ",", "100"}], "]"}]}]}],
+                 "|>"}]}]}], "\[IndentingNewLine]", "|>"}], "]"}]}]}], " ", 
+         "|>"}]}]}], "\[IndentingNewLine]", "\[IndentingNewLine]", "}"}], ",",
+      "\[IndentingNewLine]", 
      RowBox[{
       RowBox[{
        RowBox[{"AppendTo", "[", 
         RowBox[{"birds", ",", 
          RowBox[{"{", 
           RowBox[{
-          "#name", ",", "#date", ",", "#location", ",", "#site", ",", "#area",
-            ",", "#feeder", ",", "#environment", ",", "#temperature", ",", 
+          "#name", ",", "#date", ",", "#location", ",", "#site", ",", 
+           "#feeder", ",", "#environment", ",", "#temperature", ",", 
            "#precipitation", ",", "#snow", ",", "#session1a"}], "}"}]}], 
         "]"}], ";"}], "\n", "&"}], ",", "\n", 
      RowBox[{"AppearanceRules", "\[Rule]", 
@@ -16756,8 +16746,12 @@ AAAAAAAAAAAAAABgyPp/rh56Og==
    3.749162185546232*^9}, {3.7491626970794277`*^9, 3.7491627140566587`*^9}, {
    3.7491646966597013`*^9, 3.749164700130048*^9}, 3.749164730149762*^9, {
    3.7491648449576874`*^9, 3.749164848107741*^9}, {3.749169232028174*^9, 
-   3.749169246176865*^9}},
- CellLabel->"In[48]:=",ExpressionUUID->"de04c8f2-3319-4f5e-9baa-098523e242d2"],
+   3.749169246176865*^9}, {3.7493334695326433`*^9, 3.7493334699445314`*^9}, {
+   3.7493566957168064`*^9, 3.7493567155641856`*^9}, {3.750124506540323*^9, 
+   3.7501245074099426`*^9}, {3.750125073224558*^9, 3.7501250946446733`*^9}, {
+   3.7501253788973846`*^9, 3.750125406998952*^9}, {3.7501255746379833`*^9, 
+   3.7501255751661944`*^9}},ExpressionUUID->"de04c8f2-3319-4f5e-9baa-\
+098523e242d2"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -16771,9 +16765,10 @@ Cell[BoxData[
   CloudObject[
   "https://www.wolframcloud.com/objects/9a563224-39db-47a3-abe7-9b762ab2bb9a"],
   SelectWithContents->True]], "Output",
- CellChangeTimes->{3.7491621957600207`*^9, 3.749162326250846*^9, 
-  3.7491628336723146`*^9, 3.7491649877672234`*^9, 3.749169362523015*^9},
- CellLabel->"Out[48]=",ExpressionUUID->"d678c3e0-48f2-4092-92ba-2e6a1a3b1df0"]
+ CellChangeTimes->{3.7493567312388*^9, 3.749356818249099*^9, 
+  3.7501245651162724`*^9, 3.750124633455656*^9, 3.7501251495130444`*^9, 
+  3.750125462892661*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"6a2287b3-f5b7-4c0a-a6f5-6fefa6f9e2c3"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -16781,8 +16776,9 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"birds", "[", "]"}]], "Input",
  CellChangeTimes->{{3.7490754949500613`*^9, 3.749075496783176*^9}, {
-  3.7491619722579193`*^9, 3.749161980323375*^9}},
- CellLabel->"In[49]:=",ExpressionUUID->"88be29ec-fb0a-46ff-985e-28e338b482ed"],
+  3.7491619722579193`*^9, 3.749161980323375*^9}, {3.750124787866887*^9, 
+  3.7501247934390616`*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"88be29ec-fb0a-46ff-985e-28e338b482ed"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -16959,17 +16955,1113 @@ Cell[BoxData[
       RowBox[{
        RowBox[{"\<\"s1\"\>", "\[Rule]", "0"}], ",", 
        RowBox[{"\<\"s2\"\>", "\[Rule]", "0"}]}], "\[RightAssociation]"}]}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Tanha Kate\"\>", ",", 
+     TemplateBox[{RowBox[{
+         StyleBox[
+         "\"Minute: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
+         "\"Mon 22 Oct 2018 15:30\"", 
+         StyleBox[
+          RowBox[{"\"GMT+\"", "\[InvisibleSpace]", 
+            StyleBox["9.`", NumberMarks -> False, StripOnInput -> False]}], 
+          FontColor -> GrayLevel[0.5]]}],RowBox[{"DateObject", "[", 
+         RowBox[{
+           RowBox[{"{", 
+             RowBox[{"2018", ",", "10", ",", "22", ",", "15", ",", "30"}], 
+             "}"}], ",", "\"Minute\"", ",", "\"Gregorian\"", ",", "9.`"}], 
+         "]"}]},
+      "DateObject",
+      Editable->False], ",", 
+     RowBox[{"GeoPosition", "[", 
+      RowBox[{"{", 
+       RowBox[{"37.6`", ",", "126.98`"}], "}"}], "]"}], 
+     ",", "\<\"unnamed\"\>", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+     RowBox[{"\[LeftAssociation]", 
+      RowBox[{
+       RowBox[{"\<\"type\"\>", "\[Rule]", "3"}], ",", 
+       RowBox[{"\<\"when\"\>", "\[Rule]", 
+        RowBox[{"{", "2", "}"}]}], ",", 
+       RowBox[{"\<\"how\"\>", "\[Rule]", "0"}]}], "\[RightAssociation]"}], 
+     ",", 
+     RowBox[{"{", "0", "}"}], ",", 
+     RowBox[{"\[LeftAssociation]", 
+      RowBox[{
+       RowBox[{"\<\"s1\"\>", "\[Rule]", "3"}], ",", 
+       RowBox[{"\<\"s2\"\>", "\[Rule]", "2"}]}], "\[RightAssociation]"}]}], 
     "}"}]}], "}"}]], "Output",
- CellChangeTimes->{
-  3.7491620120514355`*^9, 3.749162158438725*^9, {3.749162506341233*^9, 
-   3.7491625238711557`*^9}, 3.7491626877033615`*^9, 3.7491631381355925`*^9, {
-   3.7491631835673285`*^9, 3.7491631976134634`*^9}, 3.7491637585945873`*^9, 
-   3.749163973072449*^9, 3.7491640063217835`*^9, 3.7491645356526055`*^9, 
-   3.7491650909642873`*^9, {3.749165157095608*^9, 3.7491651746174836`*^9}, 
-   3.7491652224956136`*^9, 3.7491653042543774`*^9, 3.749165510701247*^9, 
-   3.7491657694604263`*^9, 3.7491687040091467`*^9, 3.7491691953370733`*^9, 
-   3.7491715712152*^9},
- CellLabel->"Out[49]=",ExpressionUUID->"edeed062-d23d-473a-ad64-3c97b20be783"]
+ CellChangeTimes->{3.750128240984617*^9},
+ CellLabel->"Out[19]=",ExpressionUUID->"7ff59dd0-bb2a-4889-94d5-c58e77e3ffc5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Dataset", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\"\<Chris\>\"", ",", 
+      TemplateBox[{RowBox[{
+          StyleBox[
+          "\"Minute: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
+          "\"Sun 15 Nov 2015 13:17\"", 
+          StyleBox[
+           RowBox[{"\"GMT+\"", "\[InvisibleSpace]", 
+             StyleBox["9.`", NumberMarks -> False, StripOnInput -> False]}], 
+           FontColor -> GrayLevel[0.5]]}],RowBox[{"DateObject", "[", 
+          RowBox[{
+            RowBox[{"{", 
+              RowBox[{"2015", ",", "11", ",", "15", ",", "13", ",", "17"}], 
+              "}"}], ",", "\"Minute\"", ",", "\"Gregorian\"", ",", "9.`"}], 
+          "]"}]},
+       "DateObject",
+       Editable->False], ",", 
+      RowBox[{
+       RowBox[{"GeoPosition", "[", 
+        RowBox[{"{", 
+         RowBox[{"37.6`", ",", "126.98`"}], "}"}], "]"}], "[", "]"}], ",", 
+      "\"\<Home\>\"", ",", "40", ",", "1", ",", "#environment", ",", "3", ",", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{"\"\<type\>\"", "\[Rule]", "0"}], ",", 
+        RowBox[{"\"\<when\>\"", "\[Rule]", 
+         RowBox[{"{", "0", "}"}]}], ",", 
+        RowBox[{"\"\<how\>\"", "\[Rule]", "0"}]}], "\[RightAssociation]"}], 
+      ",", 
+      RowBox[{"{", "0", "}"}], ",", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{"\"\<s1\>\"", "\[Rule]", "0"}], ",", 
+        RowBox[{"\"\<s2\>\"", "\[Rule]", "0"}]}], "\[RightAssociation]"}]}], 
+     "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\"\<Christopher\>\"", ",", 
+      RowBox[{
+       TemplateBox[{RowBox[{"\"Sun 21 Oct 2018 10:51:30\"", 
+           StyleBox[
+            RowBox[{"\"GMT+\"", "\[InvisibleSpace]", 
+              StyleBox["9.`", NumberMarks -> False, StripOnInput -> False]}], 
+            FontColor -> GrayLevel[0.5]]}],RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               
+               RowBox[{
+                "2018", ",", "10", ",", "21", ",", "10", ",", "51", ",", 
+                 "30.9532536`9.243281213234953"}], "}"}], ",", "\"Instant\"", 
+             ",", "\"Gregorian\"", ",", "9.`"}], "]"}]},
+        "DateObject",
+        Editable->False], "[", "]"}], ",", 
+      RowBox[{
+       RowBox[{"GeoPosition", "[", 
+        RowBox[{"{", 
+         RowBox[{"37.6`", ",", "126.98`"}], "}"}], "]"}], "[", "]"}], ",", 
+      "\"\<unnamed\>\"", ",", "12", ",", "1", ",", "#environment", ",", "0", 
+      ",", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{"\"\<type\>\"", "\[Rule]", "0"}], ",", 
+        RowBox[{"\"\<when\>\"", "\[Rule]", 
+         RowBox[{"{", "1", "}"}]}], ",", 
+        RowBox[{"\"\<how\>\"", "\[Rule]", "0"}]}], "\[RightAssociation]"}], 
+      ",", 
+      RowBox[{"{", "0", "}"}], ",", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{"\"\<s1\>\"", "\[Rule]", "12"}], ",", 
+        RowBox[{"\"\<s2\>\"", "\[Rule]", "0"}]}], "\[RightAssociation]"}]}], 
+     "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\"\<Katja\>\"", ",", 
+      RowBox[{
+       TemplateBox[{RowBox[{"\"Mon 22 Oct 2018 11:41:20\"", 
+           StyleBox[
+            RowBox[{"\"GMT+\"", "\[InvisibleSpace]", 
+              StyleBox["9.`", NumberMarks -> False, StripOnInput -> False]}], 
+            FontColor -> GrayLevel[0.5]]}],RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               
+               RowBox[{
+                "2018", ",", "10", ",", "22", ",", "11", ",", "41", ",", 
+                 "20.7041316`9.068631954077688"}], "}"}], ",", "\"Instant\"", 
+             ",", "\"Gregorian\"", ",", "9.`"}], "]"}]},
+        "DateObject",
+        Editable->False], "[", "]"}], ",", 
+      RowBox[{
+       RowBox[{"GeoPosition", "[", 
+        RowBox[{"{", 
+         RowBox[{"37.6`", ",", "126.98`"}], "}"}], "]"}], "[", "]"}], ",", 
+      "\"\<unnamed\>\"", ",", "20", ",", "0", ",", "0", ",", "2", ",", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{"\"\<type\>\"", "\[Rule]", "0"}], ",", 
+        RowBox[{"\"\<when\>\"", "\[Rule]", 
+         RowBox[{"{", "0", "}"}]}], ",", 
+        RowBox[{"\"\<how\>\"", "\[Rule]", "0"}]}], "\[RightAssociation]"}], 
+      ",", 
+      RowBox[{"{", "0", "}"}], ",", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{"\"\<s1\>\"", "\[Rule]", "1"}], ",", 
+        RowBox[{"\"\<s2\>\"", "\[Rule]", "0"}]}], "\[RightAssociation]"}]}], 
+     "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\"\<Katja\>\"", ",", 
+      RowBox[{
+       TemplateBox[{RowBox[{"\"Mon 22 Oct 2018 11:41:20\"", 
+           StyleBox[
+            RowBox[{"\"GMT+\"", "\[InvisibleSpace]", 
+              StyleBox["9.`", NumberMarks -> False, StripOnInput -> False]}], 
+            FontColor -> GrayLevel[0.5]]}],RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               
+               RowBox[{
+                "2018", ",", "10", ",", "22", ",", "11", ",", "41", ",", 
+                 "20.7041316`9.068631954077688"}], "}"}], ",", "\"Instant\"", 
+             ",", "\"Gregorian\"", ",", "9.`"}], "]"}]},
+        "DateObject",
+        Editable->False], "[", "]"}], ",", 
+      RowBox[{
+       RowBox[{"GeoPosition", "[", 
+        RowBox[{"{", 
+         RowBox[{"37.6`", ",", "126.98`"}], "}"}], "]"}], "[", "]"}], ",", 
+      "\"\<unnamed\>\"", ",", "20", ",", "0", ",", "0", ",", "0", ",", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{"\"\<type\>\"", "\[Rule]", "0"}], ",", 
+        RowBox[{"\"\<when\>\"", "\[Rule]", 
+         RowBox[{"{", "0", "}"}]}], ",", 
+        RowBox[{"\"\<how\>\"", "\[Rule]", "0"}]}], "\[RightAssociation]"}], 
+      ",", 
+      RowBox[{"{", "0", "}"}], ",", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{"\"\<s1\>\"", "\[Rule]", "0"}], ",", 
+        RowBox[{"\"\<s2\>\"", "\[Rule]", "0"}]}], "\[RightAssociation]"}]}], 
+     "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\"\<Katja\>\"", ",", 
+      RowBox[{
+       TemplateBox[{RowBox[{"\"Mon 22 Oct 2018 11:41:20\"", 
+           StyleBox[
+            RowBox[{"\"GMT+\"", "\[InvisibleSpace]", 
+              StyleBox["9.`", NumberMarks -> False, StripOnInput -> False]}], 
+            FontColor -> GrayLevel[0.5]]}],RowBox[{"DateObject", "[", 
+           RowBox[{
+             RowBox[{"{", 
+               
+               RowBox[{
+                "2018", ",", "10", ",", "22", ",", "11", ",", "41", ",", 
+                 "20.7041316`9.068631954077688"}], "}"}], ",", "\"Instant\"", 
+             ",", "\"Gregorian\"", ",", "9.`"}], "]"}]},
+        "DateObject",
+        Editable->False], "[", "]"}], ",", 
+      RowBox[{
+       RowBox[{"GeoPosition", "[", 
+        RowBox[{"{", 
+         RowBox[{"37.6`", ",", "126.98`"}], "}"}], "]"}], "[", "]"}], ",", 
+      "\"\<unnamed\>\"", ",", "30", ",", "0", ",", "0", ",", "0", ",", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{"\"\<type\>\"", "\[Rule]", "0"}], ",", 
+        RowBox[{"\"\<when\>\"", "\[Rule]", 
+         RowBox[{"{", "0", "}"}]}], ",", 
+        RowBox[{"\"\<how\>\"", "\[Rule]", "0"}]}], "\[RightAssociation]"}], 
+      ",", 
+      RowBox[{"{", "0", "}"}], ",", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{"\"\<s1\>\"", "\[Rule]", "0"}], ",", 
+        RowBox[{"\"\<s2\>\"", "\[Rule]", "0"}]}], "\[RightAssociation]"}]}], 
+     "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\"\<Tanha Kate\>\"", ",", 
+      TemplateBox[{RowBox[{
+          StyleBox[
+          "\"Minute: \"", FontColor -> GrayLevel[0.5], FontWeight -> Plain], 
+          "\"Mon 22 Oct 2018 15:30\"", 
+          StyleBox[
+           RowBox[{"\"GMT+\"", "\[InvisibleSpace]", 
+             StyleBox["9.`", NumberMarks -> False, StripOnInput -> False]}], 
+           FontColor -> GrayLevel[0.5]]}],RowBox[{"DateObject", "[", 
+          RowBox[{
+            RowBox[{"{", 
+              RowBox[{"2018", ",", "10", ",", "22", ",", "15", ",", "30"}], 
+              "}"}], ",", "\"Minute\"", ",", "\"Gregorian\"", ",", "9.`"}], 
+          "]"}]},
+       "DateObject",
+       Editable->False], ",", 
+      RowBox[{"GeoPosition", "[", 
+       RowBox[{"{", 
+        RowBox[{"37.6`", ",", "126.98`"}], "}"}], "]"}], ",", 
+      "\"\<unnamed\>\"", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{"\"\<type\>\"", "\[Rule]", "3"}], ",", 
+        RowBox[{"\"\<when\>\"", "\[Rule]", 
+         RowBox[{"{", "2", "}"}]}], ",", 
+        RowBox[{"\"\<how\>\"", "\[Rule]", "0"}]}], "\[RightAssociation]"}], 
+      ",", 
+      RowBox[{"{", "0", "}"}], ",", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{"\"\<s1\>\"", "\[Rule]", "3"}], ",", 
+        RowBox[{"\"\<s2\>\"", "\[Rule]", "2"}]}], "\[RightAssociation]"}]}], 
+     "}"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7501254342414455`*^9, 3.7501254421292114`*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"560826f7-4046-4771-9609-ca8eb764f7af"],
+
+Cell[BoxData[
+ TemplateBox[{TagBox[
+    DynamicModuleBox[{
+     TypeSystem`NestedGrid`PackagePrivate`$state$$ = 
+      Data`UnorderedAssociation[
+       "RowCount" -> 6, "Length" -> 6, "InitialType" -> TypeSystem`Vector[
+          TypeSystem`Vector[TypeSystem`AnyType, 11], 6], "Shape" -> 
+        TypeSystem`PackageScope`Limited[
+          TypeSystem`PackageScope`MatrixShape[6, 11], 6, {All}], 
+        "InitialData" -> TypeSystem`PackageScope`CacheHandle[1327807235], 
+        "Type" -> TypeSystem`Vector[
+          TypeSystem`Vector[TypeSystem`AnyType, 11], 6], "HandleQ" -> True, 
+        "RowTarget" -> 20, "Data" -> 
+        TypeSystem`PackageScope`CacheHandle[1327807235]], 
+      TypeSystem`NestedGrid`PackagePrivate`$path$$ = {}, 
+      TypeSystem`NestedGrid`PackagePrivate`$pos$$ = 1, 
+      TypeSystem`NestedGrid`PackagePrivate`$grid$$ = 
+      DynamicModule[{
+        TypeSystem`NestedGrid`PackagePrivate`renderedGrid = Deploy[
+           Style[
+            Grid[{{
+               Pane[
+                Annotation["Chris", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[1, 1]], "Mouse"], 
+                ImageSize -> {{48.00000000000001, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox["\"Sun 15 Nov 2015 13:17\"", FontColor -> RGBColor[{
+                    Rational[33, 74], 
+                    Rational[27, 74], 
+                    Rational[117, 370]}]]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[1, 2]], "Mouse"], 
+                ImageSize -> {{75, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{
+                    RowBox[{"GeoPosition", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"37.6`", ",", "126.98`"}], "}"}], "]"}], "[", 
+                    "]"}], FontFamily -> "Source Code Pro", FontSize -> 13, 
+                   ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[1, 3]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation["Home", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[1, 4]], "Mouse"], 
+                ImageSize -> {{38.400000000000006`, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["40"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[1, 5]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["1"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[1, 6]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                  "#environment", FontFamily -> "Source Code Pro", FontSize -> 
+                   13, ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[1, 7]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["3"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[1, 8]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    RowBox[{"\"type\"", "\[Rule]", "0"}], ",", 
+                    RowBox[{"\"when\"", "\[Rule]", 
+                    RowBox[{"{", "0", "}"}]}], ",", 
+                    RowBox[{"\"how\"", "\[Rule]", "0"}]}], 
+                    "\[RightAssociation]"}], FontFamily -> "Source Code Pro", 
+                   FontSize -> 13, ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[1, 9]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"{", "0", "}"}], FontFamily -> "Source Code Pro", 
+                   FontSize -> 13, ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[1, 10]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    RowBox[{"\"s1\"", "\[Rule]", "0"}], ",", 
+                    RowBox[{"\"s2\"", "\[Rule]", "0"}]}], 
+                    "\[RightAssociation]"}], FontFamily -> "Source Code Pro", 
+                   FontSize -> 13, ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[1, 11]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {
+               Pane[
+                Annotation["Christopher", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[2, 1]], "Mouse"], 
+                ImageSize -> {{105.60000000000002`, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{
+                    TemplateBox[{
+                    RowBox[{"\"Sun 21 Oct 2018 10:51:30\"", 
+                    StyleBox[
+                    RowBox[{"\"GMT+\"", "\[InvisibleSpace]", 
+                    StyleBox[
+                    "9.`", NumberMarks -> False, StripOnInput -> False]}], 
+                    FontColor -> GrayLevel[0.5]]}], 
+                    RowBox[{"DateObject", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    
+                    RowBox[{"2018", ",", "10", ",", "21", ",", "10", ",", 
+                    "51", ",", "30.9532536`9.243281213234953"}], "}"}], ",", 
+                    "\"Instant\"", ",", "\"Gregorian\"", ",", "9.`"}], "]"}]},
+                     "DateObject", Editable -> False], "[", "]"}], FontFamily -> 
+                   "Source Code Pro", FontSize -> 13, ShowStringCharacters -> 
+                   True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[2, 2]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{
+                    RowBox[{"GeoPosition", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"37.6`", ",", "126.98`"}], "}"}], "]"}], "[", 
+                    "]"}], FontFamily -> "Source Code Pro", FontSize -> 13, 
+                   ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[2, 3]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation["unnamed", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[2, 4]], "Mouse"], 
+                ImageSize -> {{67.20000000000002, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["12"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[2, 5]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["1"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[2, 6]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                  "#environment", FontFamily -> "Source Code Pro", FontSize -> 
+                   13, ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[2, 7]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["0"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[2, 8]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    RowBox[{"\"type\"", "\[Rule]", "0"}], ",", 
+                    RowBox[{"\"when\"", "\[Rule]", 
+                    RowBox[{"{", "1", "}"}]}], ",", 
+                    RowBox[{"\"how\"", "\[Rule]", "0"}]}], 
+                    "\[RightAssociation]"}], FontFamily -> "Source Code Pro", 
+                   FontSize -> 13, ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[2, 9]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"{", "0", "}"}], FontFamily -> "Source Code Pro", 
+                   FontSize -> 13, ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[2, 10]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    RowBox[{"\"s1\"", "\[Rule]", "12"}], ",", 
+                    RowBox[{"\"s2\"", "\[Rule]", "0"}]}], 
+                    "\[RightAssociation]"}], FontFamily -> "Source Code Pro", 
+                   FontSize -> 13, ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[2, 11]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {
+               Pane[
+                Annotation["Katja", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[3, 1]], "Mouse"], 
+                ImageSize -> {{48.00000000000001, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{
+                    TemplateBox[{
+                    RowBox[{"\"Mon 22 Oct 2018 11:41:20\"", 
+                    StyleBox[
+                    RowBox[{"\"GMT+\"", "\[InvisibleSpace]", 
+                    StyleBox[
+                    "9.`", NumberMarks -> False, StripOnInput -> False]}], 
+                    FontColor -> GrayLevel[0.5]]}], 
+                    RowBox[{"DateObject", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    
+                    RowBox[{"2018", ",", "10", ",", "22", ",", "11", ",", 
+                    "41", ",", "20.7041316`9.068631954077688"}], "}"}], ",", 
+                    "\"Instant\"", ",", "\"Gregorian\"", ",", "9.`"}], "]"}]},
+                     "DateObject", Editable -> False], "[", "]"}], FontFamily -> 
+                   "Source Code Pro", FontSize -> 13, ShowStringCharacters -> 
+                   True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[3, 2]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{
+                    RowBox[{"GeoPosition", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"37.6`", ",", "126.98`"}], "}"}], "]"}], "[", 
+                    "]"}], FontFamily -> "Source Code Pro", FontSize -> 13, 
+                   ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[3, 3]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation["unnamed", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[3, 4]], "Mouse"], 
+                ImageSize -> {{67.20000000000002, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["20"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[3, 5]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["0"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[3, 6]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["0"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[3, 7]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["2"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[3, 8]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    RowBox[{"\"type\"", "\[Rule]", "0"}], ",", 
+                    RowBox[{"\"when\"", "\[Rule]", 
+                    RowBox[{"{", "0", "}"}]}], ",", 
+                    RowBox[{"\"how\"", "\[Rule]", "0"}]}], 
+                    "\[RightAssociation]"}], FontFamily -> "Source Code Pro", 
+                   FontSize -> 13, ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[3, 9]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"{", "0", "}"}], FontFamily -> "Source Code Pro", 
+                   FontSize -> 13, ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[3, 10]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    RowBox[{"\"s1\"", "\[Rule]", "1"}], ",", 
+                    RowBox[{"\"s2\"", "\[Rule]", "0"}]}], 
+                    "\[RightAssociation]"}], FontFamily -> "Source Code Pro", 
+                   FontSize -> 13, ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[3, 11]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {
+               Pane[
+                Annotation["Katja", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[4, 1]], "Mouse"], 
+                ImageSize -> {{48.00000000000001, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{
+                    TemplateBox[{
+                    RowBox[{"\"Mon 22 Oct 2018 11:41:20\"", 
+                    StyleBox[
+                    RowBox[{"\"GMT+\"", "\[InvisibleSpace]", 
+                    StyleBox[
+                    "9.`", NumberMarks -> False, StripOnInput -> False]}], 
+                    FontColor -> GrayLevel[0.5]]}], 
+                    RowBox[{"DateObject", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    
+                    RowBox[{"2018", ",", "10", ",", "22", ",", "11", ",", 
+                    "41", ",", "20.7041316`9.068631954077688"}], "}"}], ",", 
+                    "\"Instant\"", ",", "\"Gregorian\"", ",", "9.`"}], "]"}]},
+                     "DateObject", Editable -> False], "[", "]"}], FontFamily -> 
+                   "Source Code Pro", FontSize -> 13, ShowStringCharacters -> 
+                   True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[4, 2]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{
+                    RowBox[{"GeoPosition", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"37.6`", ",", "126.98`"}], "}"}], "]"}], "[", 
+                    "]"}], FontFamily -> "Source Code Pro", FontSize -> 13, 
+                   ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[4, 3]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation["unnamed", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[4, 4]], "Mouse"], 
+                ImageSize -> {{67.20000000000002, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["20"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[4, 5]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["0"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[4, 6]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["0"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[4, 7]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["0"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[4, 8]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    RowBox[{"\"type\"", "\[Rule]", "0"}], ",", 
+                    RowBox[{"\"when\"", "\[Rule]", 
+                    RowBox[{"{", "0", "}"}]}], ",", 
+                    RowBox[{"\"how\"", "\[Rule]", "0"}]}], 
+                    "\[RightAssociation]"}], FontFamily -> "Source Code Pro", 
+                   FontSize -> 13, ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[4, 9]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"{", "0", "}"}], FontFamily -> "Source Code Pro", 
+                   FontSize -> 13, ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[4, 10]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    RowBox[{"\"s1\"", "\[Rule]", "0"}], ",", 
+                    RowBox[{"\"s2\"", "\[Rule]", "0"}]}], 
+                    "\[RightAssociation]"}], FontFamily -> "Source Code Pro", 
+                   FontSize -> 13, ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[4, 11]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {
+               Pane[
+                Annotation["Katja", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[5, 1]], "Mouse"], 
+                ImageSize -> {{48.00000000000001, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{
+                    TemplateBox[{
+                    RowBox[{"\"Mon 22 Oct 2018 11:41:20\"", 
+                    StyleBox[
+                    RowBox[{"\"GMT+\"", "\[InvisibleSpace]", 
+                    StyleBox[
+                    "9.`", NumberMarks -> False, StripOnInput -> False]}], 
+                    FontColor -> GrayLevel[0.5]]}], 
+                    RowBox[{"DateObject", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    
+                    RowBox[{"2018", ",", "10", ",", "22", ",", "11", ",", 
+                    "41", ",", "20.7041316`9.068631954077688"}], "}"}], ",", 
+                    "\"Instant\"", ",", "\"Gregorian\"", ",", "9.`"}], "]"}]},
+                     "DateObject", Editable -> False], "[", "]"}], FontFamily -> 
+                   "Source Code Pro", FontSize -> 13, ShowStringCharacters -> 
+                   True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[5, 2]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{
+                    RowBox[{"GeoPosition", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"37.6`", ",", "126.98`"}], "}"}], "]"}], "[", 
+                    "]"}], FontFamily -> "Source Code Pro", FontSize -> 13, 
+                   ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[5, 3]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation["unnamed", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[5, 4]], "Mouse"], 
+                ImageSize -> {{67.20000000000002, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["30"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[5, 5]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["0"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[5, 6]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["0"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[5, 7]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["0"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[5, 8]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    RowBox[{"\"type\"", "\[Rule]", "0"}], ",", 
+                    RowBox[{"\"when\"", "\[Rule]", 
+                    RowBox[{"{", "0", "}"}]}], ",", 
+                    RowBox[{"\"how\"", "\[Rule]", "0"}]}], 
+                    "\[RightAssociation]"}], FontFamily -> "Source Code Pro", 
+                   FontSize -> 13, ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[5, 9]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"{", "0", "}"}], FontFamily -> "Source Code Pro", 
+                   FontSize -> 13, ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[5, 10]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    RowBox[{"\"s1\"", "\[Rule]", "0"}], ",", 
+                    RowBox[{"\"s2\"", "\[Rule]", "0"}]}], 
+                    "\[RightAssociation]"}], FontFamily -> "Source Code Pro", 
+                   FontSize -> 13, ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[5, 11]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {
+               Pane[
+                Annotation["Tanha Kate", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[6, 1]], "Mouse"], 
+                ImageSize -> {{96.00000000000001, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox["\"Mon 22 Oct 2018 15:30\"", FontColor -> RGBColor[{
+                    Rational[33, 74], 
+                    Rational[27, 74], 
+                    Rational[117, 370]}]]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[6, 2]], "Mouse"], 
+                ImageSize -> {{75, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                  "\"37.6\[Degree]N 127.\[Degree]E\"", FontColor -> RGBColor[{
+                    Rational[33, 74], 
+                    Rational[27, 74], 
+                    Rational[117, 370]}]]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[6, 3]], "Mouse"], 
+                ImageSize -> {{106, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation["unnamed", 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[6, 4]], "Mouse"], 
+                ImageSize -> {{67.20000000000002, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["0"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[6, 5]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["0"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[6, 6]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["0"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[6, 7]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["0"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[6, 8]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    RowBox[{"\"type\"", "\[Rule]", "3"}], ",", 
+                    RowBox[{"\"when\"", "\[Rule]", 
+                    RowBox[{"{", "2", "}"}]}], ",", 
+                    RowBox[{"\"how\"", "\[Rule]", "0"}]}], 
+                    "\[RightAssociation]"}], FontFamily -> "Source Code Pro", 
+                   FontSize -> 13, ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[6, 9]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"{", "0", "}"}], FontFamily -> "Source Code Pro", 
+                   FontSize -> 13, ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[6, 10]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    RowBox[{"\"s1\"", "\[Rule]", "3"}], ",", 
+                    RowBox[{"\"s2\"", "\[Rule]", "2"}]}], 
+                    "\[RightAssociation]"}], FontFamily -> "Source Code Pro", 
+                   FontSize -> 13, ShowStringCharacters -> True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+                  GeneralUtilities`Slice[6, 11]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}}, BaseStyle -> {ContextMenu -> {
+                 MenuItem["Copy position to clipboard", 
+                  KernelExecute[
+                   TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                   TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                  MenuEvaluator -> Automatic], 
+                 MenuItem["Copy data to clipboard", 
+                  KernelExecute[
+                   TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                  MenuEvaluator -> Automatic], Delimiter, 
+                 MenuItem["Paste position in new cell", 
+                  KernelExecute[
+                   TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                   TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                  MenuEvaluator -> Automatic], 
+                 MenuItem["Paste data in new cell", 
+                  KernelExecute[
+                   TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                  MenuEvaluator -> Automatic]}, FontFamily -> "Verdana", 
+               FontSize -> 12}, Alignment -> Left, RowMinHeight -> 1.5, 
+             Dividers -> All, FrameStyle -> GrayLevel[0.85], 
+             BaseStyle -> {FontFamily -> "Verdana", FontSize -> 12}], 
+            LineBreakWithin -> False, ContextMenu -> {}, NumberMarks -> False,
+             ShowAutoStyles -> False]], 
+         TypeSystem`NestedGrid`PackagePrivate`initialQ = True, 
+         TypeSystem`NestedGrid`PackagePrivate`self = $Failed}, 
+        Dynamic[
+         TypeSystem`NestedGrid`PackagePrivate`setupViewPath[
+         TypeSystem`NestedGrid`PackagePrivate`$path$$, If[
+            Not[TypeSystem`NestedGrid`PackagePrivate`initialQ], 
+            
+            Module[{TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = $Failed, 
+              TypeSystem`NestedGrid`PackagePrivate`tmpData$ = 
+              TypeSystem`NestedGrid`PackagePrivate`LookupCacheValue[
+                TypeSystem`NestedGrid`PackagePrivate`$state$$["Data"]]}, 
+             TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = 
+              If[TypeSystem`NestedGrid`PackagePrivate`tmpData$ === 
+                TypeSystem`NestedGrid`PackagePrivate`$NotCached, 
+                TypeSystem`NestedGrid`PackagePrivate`renderedGrid, 
+                TypeSystem`NestedGrid`PackagePrivate`renderGrid[
+                TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                 TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                 TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                 TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1515764583][
+                TypeSystem`NestedGrid`PackagePrivate`tmpData$]]; If[
+               Not[
+                FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]], 
+               TypeSystem`NestedGrid`PackagePrivate`renderedGrid = 
+               TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]; Null]]; 
+          TypeSystem`NestedGrid`PackagePrivate`initialQ = False; 
+          TypeSystem`NestedGrid`PackagePrivate`$pos$$; If[
+            FailureQ[TypeSystem`NestedGrid`PackagePrivate`renderedGrid], 
+            TypeSystem`SparseGrid[
+             TypeSystem`H["(data no longer present)"]], 
+            If[GeneralUtilities`$DebugMode, 
+             Row[{TypeSystem`NestedGrid`PackagePrivate`renderedGrid, "  ", 
+               TypeSystem`NestedGrid`PackagePrivate`formatState[
+               TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                TypeSystem`NestedGrid`PackagePrivate`$pos$$]}], 
+             TypeSystem`NestedGrid`PackagePrivate`renderedGrid]]], 
+         TrackedSymbols :> {TypeSystem`NestedGrid`PackagePrivate`$pos$$}], 
+        DynamicModuleValues :> {}], 
+      TypeSystem`NestedGrid`PackagePrivate`$posCell$$, 
+      TypeSystem`NestedGrid`PackagePrivate`$topBar$$ = Dynamic[
+        TypeSystem`NestedGrid`PackagePrivate`alignBar[
+        TypeSystem`NestedGrid`PackagePrivate`$state$$][
+         TypeSystem`NestedGrid`PackagePrivate`makeFramedBar[
+          TypeSystem`PackageScope`Pathbar[
+          TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+           TypeSystem`NestedGrid`PackagePrivate`updateState[
+           TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+            TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+            TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+            TypeSystem`NestedGrid`PackagePrivate`$grid$$, 1515764583]]]], 
+        TrackedSymbols :> {TypeSystem`NestedGrid`PackagePrivate`$path$$}], 
+      TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$ = Framed[
+        Dynamic[
+         Replace[
+          MouseAnnotation[Null], {
+          TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][Null] -> 
+           "", TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1515764583][
+             Pattern[TypeSystem`NestedGrid`PackagePrivate`path, 
+              Blank[]]] :> (
+            TypeSystem`NestedGrid`PackagePrivate`$lastPath = 
+             TypeSystem`NestedGrid`PackagePrivate`path; 
+            TypeSystem`NestedGrid`PackagePrivate`makePathTrail[
+             TypeSystem`NestedGrid`PackagePrivate`path, 
+              TypeSystem`NestedGrid`PackagePrivate`makePathElements]), Null :> 
+           Spacer[10], Blank[] :> Spacer[10]}], TrackedSymbols :> {}], 
+        FrameStyle -> None, ImageMargins -> 0, FrameMargins -> 0, Alignment -> 
+        Top, ImageSize -> {Automatic, 14}]}, 
+     DynamicBox[
+      ToBoxes[
+       Column[
+        If[TypeSystem`NestedGrid`PackagePrivate`$path$$ == {}, {
+          TypeSystem`NestedGrid`PackagePrivate`displayScrollBar[
+          TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+           TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+           TypeSystem`NestedGrid`PackagePrivate`$pos$$], 
+          TypeSystem`NestedGrid`PackagePrivate`onDesktopShow[
+           TypeSystem`NestedGrid`PackagePrivate`alignBar[
+           TypeSystem`NestedGrid`PackagePrivate`$state$$][
+           TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$]]}, {
+         TypeSystem`NestedGrid`PackagePrivate`$topBar$$, 
+          TypeSystem`NestedGrid`PackagePrivate`displayScrollBar[
+          TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+           TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+           TypeSystem`NestedGrid`PackagePrivate`$pos$$], 
+          TypeSystem`NestedGrid`PackagePrivate`onDesktopShow[
+           TypeSystem`NestedGrid`PackagePrivate`alignBar[
+           TypeSystem`NestedGrid`PackagePrivate`$state$$][
+           TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$]]}], Spacings -> 
+        If[
+         TypeSystem`NestedGrid`PackagePrivate`$path$$ == {}, 
+          0, {{}, {0, 0.05, 0}}]], StandardForm], 
+      ImageSizeCache -> {1335., {87.5, 93.5}}, 
+      TrackedSymbols :> {
+       TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$grid$$}], 
+     BaseStyle -> {LineBreakWithin -> False}, Deinitialization :> 
+     TypeSystem`NestedGrid`PackagePrivate`deleteState[
+      TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+     DynamicModuleValues :> {}, Initialization :> 
+     Block[{$ContextPath = $ContextPath}, 
+       Needs["TypeSystem`"]]], Deploy, DefaultBaseStyle -> "Deploy"]},
+  "CopyTag",
+  DisplayFunction->(#& ),
+  InterpretationFunction->("Dataset[<>]"& )]], "Output",
+ CellChangeTimes->{3.7501254637700586`*^9},
+ CellLabel->"Out[17]=",ExpressionUUID->"df23d394-7cd7-494a-b7a3-a72008481a99"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -23449,77 +24541,12 @@ Cell[CellGroupData[{
 
 Cell[BoxData["$CloudCreditsAvailable"], "Input",
  CellChangeTimes->{{3.74907558894002*^9, 3.7490755922858286`*^9}},
- CellLabel->"In[44]:=",ExpressionUUID->"8147ae03-40f9-4574-88d2-2efd2b0e8258"],
+ CellLabel->"In[5]:=",ExpressionUUID->"8147ae03-40f9-4574-88d2-2efd2b0e8258"],
 
-Cell[BoxData["34429"], "Output",
- CellChangeTimes->{3.7491661530243163`*^9},
- CellLabel->"Out[44]=",ExpressionUUID->"439fc7d3-5125-49b5-8476-0edf50cbe02b"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData["34464"], "Input",
- CellChangeTimes->{3.749166148293128*^9},
- CellLabel->"In[43]:=",ExpressionUUID->"97676b6d-a982-4894-989f-826b6579e1f7"],
-
-Cell[BoxData["34464"], "Output",
- CellChangeTimes->{3.749166148354963*^9},
- CellLabel->"Out[43]=",ExpressionUUID->"f255aa6a-605c-4fe5-b714-d473e5000dbd"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData["34468"], "Input",
- CellChangeTimes->{3.749165287974457*^9},
- CellLabel->"In[38]:=",ExpressionUUID->"6d5d0f0a-4b46-4747-98b4-ed192c0ee378"],
-
-Cell[BoxData["34468"], "Output",
- CellChangeTimes->{3.7491652880707126`*^9},
- CellLabel->"Out[38]=",ExpressionUUID->"b764ec25-9fec-4eb5-94ae-675a76b217aa"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData["34519"], "Input",
- CellChangeTimes->{3.749165077462326*^9},
- CellLabel->"In[31]:=",ExpressionUUID->"4459f81e-3599-4f04-9977-c2eba8deb8d2"],
-
-Cell[BoxData["34519"], "Output",
- CellChangeTimes->{3.7491650775238695`*^9},
- CellLabel->"Out[31]=",ExpressionUUID->"78521c31-9cc8-45d0-8795-c57936b990e3"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData["34567"], "Input",
- CellChangeTimes->{3.7491632654753056`*^9},
- CellLabel->"In[22]:=",ExpressionUUID->"5df864b3-82d9-4d86-993a-0a57d65495cf"],
-
-Cell[BoxData["34567"], "Output",
- CellChangeTimes->{3.7491632655560884`*^9},
- CellLabel->"Out[22]=",ExpressionUUID->"737c59d8-f031-48af-8f3a-8691451ef857"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData["34630"], "Input",
- CellChangeTimes->{3.7491626530673985`*^9},
- CellLabel->"In[13]:=",ExpressionUUID->"12b0ffc2-e930-4fa4-a2a3-cd95675db33b"],
-
-Cell[BoxData["34630"], "Output",
- CellChangeTimes->{3.7491626531511755`*^9},
- CellLabel->"Out[13]=",ExpressionUUID->"5fb42215-f4f0-4b3b-978e-7ba4acda5770"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData["35112"], "Input",
- CellChangeTimes->{3.7491620563987675`*^9},
- CellLabel->"In[6]:=",ExpressionUUID->"6c5d28e4-b316-43ca-b2ba-70e692fe14a5"],
-
-Cell[BoxData["35112"], "Output",
- CellChangeTimes->{3.749162056455616*^9},
- CellLabel->"Out[6]=",ExpressionUUID->"4f8a5dfc-7762-4563-8344-1b8a4f2a3ffd"]
+Cell[BoxData["34252"], "Output",
+ CellChangeTimes->{3.7491661530243163`*^9, 3.749333260130872*^9, 
+  3.749333442220832*^9, 3.7501246343196936`*^9, 3.7501246686447315`*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"d75a12ee-b688-4cea-87ba-1b40792ac52a"]
 }, Open  ]],
 
 Cell["ca 250 submission for $1", "Text",
@@ -32760,8 +33787,8 @@ Cell[BoxData[
  CellLabel->"Out[47]=",ExpressionUUID->"ea413e6f-0e59-4eea-ae8d-71165d500a9b"]
 }, Open  ]]
 },
-WindowSize->{759, 747},
-WindowMargins->{{Automatic, 6}, {-4, Automatic}},
+WindowSize->{1520, 781},
+WindowMargins->{{-8, Automatic}, {Automatic, 0}},
 WindowStatusArea->None,
 Magnification:>0.9 Inherited,
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
@@ -32778,60 +33805,41 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
+Cell[558, 20, 155, 3, 26, "Input",ExpressionUUID->"2f412c3e-bef4-4ae5-9ae4-d53c08ee1197"],
 Cell[CellGroupData[{
-Cell[580, 22, 458, 7, 26, "Input",ExpressionUUID->"e719fceb-8d0b-4af7-b0fc-089af7b8e3ab"],
-Cell[1041, 31, 15120, 299, 65, "Output",ExpressionUUID->"4c8e746b-4409-4e7c-af2e-6db46ba9e575"]
+Cell[738, 27, 458, 7, 26, "Input",ExpressionUUID->"e719fceb-8d0b-4af7-b0fc-089af7b8e3ab"],
+Cell[1199, 36, 15239, 300, 65, "Output",ExpressionUUID->"b930e9f6-7bb6-43da-a50a-ceed1b30b51b"]
 }, Open  ]],
-Cell[16176, 333, 130, 3, 26, "Input",ExpressionUUID->"4bdf86b7-7c8d-4a15-891a-d7223843ae84"],
+Cell[16453, 339, 130, 3, 26, "Input",ExpressionUUID->"4bdf86b7-7c8d-4a15-891a-d7223843ae84"],
 Cell[CellGroupData[{
-Cell[16331, 340, 998126, 16419, 1211, "Code",ExpressionUUID->"de04c8f2-3319-4f5e-9baa-098523e242d2"],
-Cell[1014460, 16761, 634, 14, 30, "Output",ExpressionUUID->"d678c3e0-48f2-4092-92ba-2e6a1a3b1df0"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[1015131, 16780, 251, 4, 26, "Input",ExpressionUUID->"88be29ec-fb0a-46ff-985e-28e338b482ed"],
-Cell[1015385, 16786, 7809, 185, 326, "Output",ExpressionUUID->"edeed062-d23d-473a-ad64-3c97b20be783"]
+Cell[16608, 346, 997686, 16407, 1160, "Code",ExpressionUUID->"de04c8f2-3319-4f5e-9baa-098523e242d2"],
+Cell[1014297, 16755, 655, 15, 30, "Output",ExpressionUUID->"6a2287b3-f5b7-4c0a-a6f5-6fefa6f9e2c3"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1023231, 16976, 310, 6, 26, "Input",ExpressionUUID->"9cf6d537-26f5-4d77-8a17-d10f49fc063d"],
-Cell[1023544, 16984, 392537, 6460, 394, "Output",ExpressionUUID->"90256a52-24e9-4cf6-8d64-b2b81ef5015c"]
+Cell[1014989, 16775, 302, 5, 26, "Input",ExpressionUUID->"88be29ec-fb0a-46ff-985e-28e338b482ed"],
+Cell[1015294, 16782, 8675, 211, 209, "Output",ExpressionUUID->"7ff59dd0-bb2a-4889-94d5-c58e77e3ffc5"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1416118, 23449, 194, 2, 26, "Input",ExpressionUUID->"8147ae03-40f9-4574-88d2-2efd2b0e8258"],
-Cell[1416315, 23453, 155, 2, 30, "Output",ExpressionUUID->"439fc7d3-5125-49b5-8476-0edf50cbe02b"]
+Cell[1024006, 16998, 9005, 215, 205, InheritFromParent,ExpressionUUID->"560826f7-4046-4771-9609-ca8eb764f7af"],
+Cell[1033014, 17215, 42671, 848, 199, "Output",ExpressionUUID->"df23d394-7cd7-494a-b7a3-a72008481a99"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1416507, 23460, 152, 2, 26, InheritFromParent,ExpressionUUID->"97676b6d-a982-4894-989f-826b6579e1f7"],
-Cell[1416662, 23464, 153, 2, 30, "Output",ExpressionUUID->"f255aa6a-605c-4fe5-b714-d473e5000dbd"]
+Cell[1075722, 18068, 310, 6, 26, "Input",ExpressionUUID->"9cf6d537-26f5-4d77-8a17-d10f49fc063d"],
+Cell[1076035, 18076, 392537, 6460, 394, "Output",ExpressionUUID->"90256a52-24e9-4cf6-8d64-b2b81ef5015c"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1416852, 23471, 152, 2, 26, InheritFromParent,ExpressionUUID->"6d5d0f0a-4b46-4747-98b4-ed192c0ee378"],
-Cell[1417007, 23475, 155, 2, 30, "Output",ExpressionUUID->"b764ec25-9fec-4eb5-94ae-675a76b217aa"]
+Cell[1468609, 24541, 193, 2, 26, "Input",ExpressionUUID->"8147ae03-40f9-4574-88d2-2efd2b0e8258"],
+Cell[1468805, 24545, 249, 3, 30, "Output",ExpressionUUID->"d75a12ee-b688-4cea-87ba-1b40792ac52a"]
+}, Open  ]],
+Cell[1469069, 24551, 168, 3, 31, "Text",ExpressionUUID->"15faa491-1a6e-42df-8d11-0ee0a07d6996"],
+Cell[CellGroupData[{
+Cell[1469262, 24558, 509072, 8352, 56, "Input",ExpressionUUID->"cd5509b5-4a28-4f27-80af-3cffe45cb292"],
+Cell[1978337, 32912, 63849, 845, 45, "Message",ExpressionUUID->"d4cf527e-04bb-4cdb-ab0b-38a6f96e51d0"],
+Cell[2042189, 33759, 563, 13, 30, "Output",ExpressionUUID->"4f8af9ca-3362-4ab2-942a-558938df8dc4"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1417199, 23482, 152, 2, 26, InheritFromParent,ExpressionUUID->"4459f81e-3599-4f04-9977-c2eba8deb8d2"],
-Cell[1417354, 23486, 155, 2, 30, "Output",ExpressionUUID->"78521c31-9cc8-45d0-8795-c57936b990e3"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[1417546, 23493, 154, 2, 26, InheritFromParent,ExpressionUUID->"5df864b3-82d9-4d86-993a-0a57d65495cf"],
-Cell[1417703, 23497, 155, 2, 30, "Output",ExpressionUUID->"737c59d8-f031-48af-8f3a-8691451ef857"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[1417895, 23504, 154, 2, 26, InheritFromParent,ExpressionUUID->"12b0ffc2-e930-4fa4-a2a3-cd95675db33b"],
-Cell[1418052, 23508, 155, 2, 30, "Output",ExpressionUUID->"5fb42215-f4f0-4b3b-978e-7ba4acda5770"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[1418244, 23515, 153, 2, 26, InheritFromParent,ExpressionUUID->"6c5d28e4-b316-43ca-b2ba-70e692fe14a5"],
-Cell[1418400, 23519, 152, 2, 30, "Output",ExpressionUUID->"4f8a5dfc-7762-4563-8344-1b8a4f2a3ffd"]
-}, Open  ]],
-Cell[1418567, 23524, 168, 3, 31, "Text",ExpressionUUID->"15faa491-1a6e-42df-8d11-0ee0a07d6996"],
-Cell[CellGroupData[{
-Cell[1418760, 23531, 509072, 8352, 56, "Input",ExpressionUUID->"cd5509b5-4a28-4f27-80af-3cffe45cb292"],
-Cell[1927835, 31885, 63849, 845, 45, "Message",ExpressionUUID->"d4cf527e-04bb-4cdb-ab0b-38a6f96e51d0"],
-Cell[1991687, 32732, 563, 13, 30, "Output",ExpressionUUID->"4f8af9ca-3362-4ab2-942a-558938df8dc4"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[1992287, 32750, 177, 2, 26, "Input",ExpressionUUID->"baeccc5c-cefe-425f-a4a2-55bdb1a4d0a8"],
-Cell[1992467, 32754, 242, 5, 30, "Output",ExpressionUUID->"ea413e6f-0e59-4eea-ae8d-71165d500a9b"]
+Cell[2042789, 33777, 177, 2, 26, "Input",ExpressionUUID->"baeccc5c-cefe-425f-a4a2-55bdb1a4d0a8"],
+Cell[2042969, 33781, 242, 5, 30, "Output",ExpressionUUID->"ea413e6f-0e59-4eea-ae8d-71165d500a9b"]
 }, Open  ]]
 }
 ]
