@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    147499,       2513]
-NotebookOptionsPosition[    146531,       2488]
-NotebookOutlinePosition[    146871,       2503]
-CellTagsIndexPosition[    146828,       2500]
+NotebookDataLength[    175365,       3116]
+NotebookOptionsPosition[    171727,       3047]
+NotebookOutlinePosition[    172067,       3062]
+CellTagsIndexPosition[    172024,       3059]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -34,16 +34,15 @@ Cell[BoxData[{
      "StringTemplate", "[", 
       "\"\<\n<input type=\\\"hidden\\\" id=\\\"mapField\\\" name=\\\"`Name`\\\
 \">\n<div id=\\\"selectionMap\\\" \
-style=\\\"width:100%;height:400px;\\\"></div>\n<script>\nfield = \
-document.getElementById(\\\"mapField\\\")\nfunction initMap() {\n\t\
+style=\\\"width:100%;height:400px;\\\"></div>\n<sc\nfuion initMap() {\n\t\
 defaultPosition = {lat: `Latitude`, lng: `Longitude`}\n\tvar map = new \
 google.maps.Map(\n\t\tdocument.getElementById(\\\"selectionMap\\\"),\n\t\t\
 {zoom: `DefaultZoom`, center: defaultPosition})\n\tvar marker = new \
 google.maps.Marker({\n\t\tposition: defaultPosition,\n\t\tdraggable:false,\n\t\
 \tmap: map\n\t})\n\tfield.value = marker.position\n\t\
 google.maps.event.addListener(\n\t\tmap,\n\t\t\\\"center_changed\\\",\n\t\t\
-function() {\n\t\t\tmarker.setPosition(map.getCenter())\n\t\t\tfield.value = \
-marker.position\n\t\t}\n\t)\n\n\tfunction showPosition(position) {\n\t\t\
+function() {\n\n\t\t\tmarker.setPosition(map.getCenter())\n\t\t\tfield.value \
+= marker.position\n\t\t}\n\t)\n\n\tfunction showPosition(position) {\n\t\t\
 coords = {\n\t\t\tlat: position.coords.latitude,\n\t\t\tlng: \
 position.coords.longitude\n\t\t}\n\t\tmarker.setPosition(coords)\n\t\t\
 map.panTo(coords)\n\t\tfield.value = marker.position\n\t}\n\t\
@@ -66,44 +65,57 @@ src=\\\"https://maps.googleapis.com/maps/api/js?key=`apiKey`&callback=initMap\
        RowBox[{"\"\<DefaultZoom\>\"", "\[Rule]", "defaultZoom"}], ",", 
        RowBox[{"\"\<apiKey\>\"", "\[Rule]", " ", "apiKey"}]}], "|>"}], 
      "]"}]}], "]"}]}]}], "Code",
- CellLabel->"In[1]:=",ExpressionUUID->"240840f6-19a5-4704-adc5-dd08376cbf15"],
+ CellChangeTimes->{3.755002348732775*^9, 3.75507393973508*^9},
+ CellLabel->"In[24]:=",ExpressionUUID->"240840f6-19a5-4704-adc5-dd08376cbf15"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
   RowBox[{"CloudDeploy", "[", 
-   RowBox[{"FormFunction", "[", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{"\"\<location\>\"", "\[Rule]", 
-       RowBox[{"<|", "\n", "\t", 
-        RowBox[{
+   RowBox[{
+    RowBox[{"FormFunction", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"\"\<location\>\"", "\[Rule]", 
+        RowBox[{"<|", "\n", "\t", 
          RowBox[{
-         "\"\<Label\>\"", "\[Rule]", 
-          "\"\<Drag the map so the marker points at your location\>\""}], ",",
-          "\n", "\t", 
-         RowBox[{
-         "\"\<Interpreter\>\"", "\[Rule]", 
-          "\"\<StructuredGeoCoordinates\>\""}], ",", "\n", "\t", 
-         RowBox[{"\"\<Control\>\"", "\[Rule]", 
-          RowBox[{"mapControl", "[", 
-           RowBox[{"apiKey", ",", "\"\<location\>\"", ",", 
-            RowBox[{
-             TemplateBox[{"\"Champaign\"",RowBox[{"Entity", "[", 
-                 RowBox[{"\"City\"", ",", 
-                   RowBox[{"{", 
+          RowBox[{
+          "\"\<Label\>\"", "\[Rule]", 
+           "\"\<Drag the map so the marker points at your location\>\""}], 
+          ",", "\n", "\t", 
+          RowBox[{
+          "\"\<Interpreter\>\"", "\[Rule]", 
+           "\"\<StructuredGeoCoordinates\>\""}], ",", "\n", "\t", 
+          RowBox[{"\"\<Control\>\"", "\[Rule]", 
+           RowBox[{"mapControl", "[", 
+            RowBox[{"apiKey", ",", "\"\<location\>\"", ",", 
+             RowBox[{
+              TemplateBox[{"\"Champaign\"",RowBox[{"Entity", "[", 
+                  RowBox[{"\"City\"", ",", 
+                    RowBox[{"{", 
                     
                     RowBox[{
                     "\"Champaign\"", ",", "\"Illinois\"", ",", 
                     "\"UnitedStates\""}], "}"}]}], "]"}],
-               "\"Entity[\\\"City\\\", {\\\"Champaign\\\", \\\"Illinois\\\", \
+                "\"Entity[\\\"City\\\", {\\\"Champaign\\\", \\\"Illinois\\\", \
 \\\"UnitedStates\\\"}]\"","\"city\""},
-              "Entity"], "[", "\"\<Position\>\"", "]"}]}], "]"}]}]}], 
-        "|>"}]}], "}"}], ",", "\n", "\t", 
-     RowBox[{"#location", "&"}], ",", "\n", "\t", 
-     "\"\<https://www.wolframcloud.com/objects/3550411e-7493-4e1f-811e-\
-8a1be25c1f38\>\""}], "]"}], "]"}], "\n"}]], "Code",
+               "Entity"], "[", "\"\<Position\>\"", "]"}]}], "]"}]}]}], 
+         "|>"}]}], "}"}], ",", "\n", "\t", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"#location", ",", 
+         RowBox[{"GeoGraphics", "[", 
+          RowBox[{
+           RowBox[{"GeoMarker", "[", "#location", "]"}], ",", 
+           RowBox[{"GeoRange", "\[Rule]", 
+            RowBox[{"Quantity", "[", 
+             RowBox[{"1", ",", "\"\<Miles\>\""}], "]"}]}]}], "]"}]}], "}"}], 
+       "&"}]}], "]"}], ",", "\n", "\t", 
+    "\"\<https://www.wolframcloud.com/objects/3550411e-7493-4e1f-811e-\
+8a1be25c1f38\>\"", ",", "\n", "\t", 
+    RowBox[{"Permissions", "\[Rule]", "\"\<Public\>\""}]}], "]"}], 
+  "\n"}]], "Code",
  CellChangeTimes->{{3.7545791807912197`*^9, 3.754579197209281*^9}, {
    3.7545792322664924`*^9, 3.754579358721527*^9}, {3.7545793896287737`*^9, 
    3.754579393518383*^9}, {3.7545794428720274`*^9, 3.7545794451728373`*^9}, {
@@ -113,27 +125,27 @@ Cell[BoxData[
    3.7545797921798105`*^9, 3.754579813924618*^9}, {3.754579859929684*^9, 
    3.7545798659889145`*^9}, {3.754580545863096*^9, 3.754580566417339*^9}, {
    3.7545806135880356`*^9, 3.754580620874916*^9}, {3.7545807388235807`*^9, 
-   3.7545807595037346`*^9}, {3.754580866091899*^9, 3.754580965513874*^9}},
- CellLabel->"In[20]:=",ExpressionUUID->"afa7e9ef-de6d-4883-86ca-3bbb8f3b8f75"],
+   3.7545807595037346`*^9}, {3.754580866091899*^9, 3.754580965513874*^9}, {
+   3.7550023917633696`*^9, 3.7550024429352007`*^9}, 3.755002589703087*^9, {
+   3.755002627578844*^9, 3.7550027323898444`*^9}, {3.755002843794773*^9, 
+   3.7550028692028823`*^9}, {3.755002968544613*^9, 3.755002980950065*^9}, 
+   3.7550031434299526`*^9, {3.7550750951777472`*^9, 3.755075095735917*^9}},
+ CellLabel->"",ExpressionUUID->"afa7e9ef-de6d-4883-86ca-3bbb8f3b8f75"],
 
 Cell[BoxData[
  InterpretationBox[
   RowBox[{"CloudObject", "[", 
    TemplateBox[{
-    "\"https://www.wolframcloud.com/objects/eec6ad01-9cd3-409a-8e55-\
-0bab399df3a5\"",
-     "https://www.wolframcloud.com/objects/eec6ad01-9cd3-409a-8e55-\
-0bab399df3a5"},
+    "\"https://www.wolframcloud.com/objects/3550411e-7493-4e1f-811e-\
+8a1be25c1f38\"",
+     "https://www.wolframcloud.com/objects/3550411e-7493-4e1f-811e-\
+8a1be25c1f38"},
     "HyperlinkURL"], "]"}],
   CloudObject[
-  "https://www.wolframcloud.com/objects/eec6ad01-9cd3-409a-8e55-0bab399df3a5"],
+  "https://www.wolframcloud.com/objects/3550411e-7493-4e1f-811e-8a1be25c1f38"],
   SelectWithContents->True]], "Output",
- CellChangeTimes->{
-  3.754579868387825*^9, {3.754580550812076*^9, 3.75458056807908*^9}, 
-   3.7545806284936466`*^9, {3.754580745349021*^9, 3.7545807630927153`*^9}, {
-   3.7545808886863084`*^9, 3.754580902786336*^9}, {3.754580941690624*^9, 
-   3.7545809673445454`*^9}},
- CellLabel->"Out[20]=",ExpressionUUID->"fa6ce149-a4aa-44ce-b00c-402d23262231"]
+ CellChangeTimes->{3.7550028715960093`*^9, 3.7550029839525337`*^9},
+ CellLabel->"Out[32]=",ExpressionUUID->"617fa6e6-c8b0-476e-bf74-4cfaf546a485"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2484,9 +2496,556 @@ Cell[BoxData[
   "]"}]], "Output",
  CellChangeTimes->{3.7545795330493574`*^9},
  CellLabel->"Out[6]=",ExpressionUUID->"b318c924-dbcb-4942-82f6-1e4febde453e"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Clear", "[", "mapControl", "]"}]], "Input",
+ CellChangeTimes->{{3.7550054665863113`*^9, 3.755005474379092*^9}},
+ CellLabel->"In[59]:=",ExpressionUUID->"d35bfd3e-4b7e-4cc4-b43d-8587b9a19d0e"],
+
+Cell[CellGroupData[{
+
+Cell["Try with Leaflet", "Section",
+ CellChangeTimes->{{3.755005171141431*^9, 
+  3.7550051778294344`*^9}},ExpressionUUID->"49591914-9f1a-4602-bc23-\
+d387816aa100"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7550070394188337`*^9, 
+  3.755007042409286*^9}},ExpressionUUID->"ea981d87-29cd-4d1b-97b3-\
+b818a1971d6a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudDeploy", "[", 
+  RowBox[{
+   RowBox[{"ExportForm", "[", 
+    RowBox[{
+     RowBox[{"URLRead", "[", 
+      RowBox[{
+      "\"\<http://cdn.leafletjs.com/leaflet-0.7/leaflet.js\>\"", ",", 
+       "\"\<Body\>\""}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\"\<String\>\"", ",", "\"\<application/javascript\>\""}], 
+      "}"}]}], "]"}], ",", 
+   "\"\<https://www.wolframcloud.com/objects/fcc88aa0-af0b-4dd0-982d-\
+4110d5a4c7a2\>\"", ",", 
+   RowBox[{"Permissions", "\[Rule]", "\"\<Public\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7550059780322943`*^9, 3.7550061217642813`*^9}, {
+   3.755006567265643*^9, 3.7550065975543227`*^9}, {3.7550066354578433`*^9, 
+   3.755006662314911*^9}, {3.7550067448980722`*^9, 3.755006814238124*^9}, {
+   3.7550068489064274`*^9, 3.7550068858543053`*^9}, {3.755007023953618*^9, 
+   3.7550070312529454`*^9}, 3.7550071592234144`*^9, {3.755007324021804*^9, 
+   3.7550073993407946`*^9}, 3.7550692788451552`*^9},
+ CellLabel->"In[98]:=",ExpressionUUID->"7cd5f846-be42-4898-9c0b-d15f97a36b71"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/objects/fcc88aa0-af0b-4dd0-982d-\
+4110d5a4c7a2\"",
+     "https://www.wolframcloud.com/objects/fcc88aa0-af0b-4dd0-982d-\
+4110d5a4c7a2"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/objects/fcc88aa0-af0b-4dd0-982d-4110d5a4c7a2"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.7550060913398867`*^9, 3.7550061245919323`*^9, 
+  3.75500689053885*^9, 3.755006929254381*^9, 3.755007162286695*^9, 
+  3.755007408772196*^9, 3.7550692831163173`*^9},
+ CellLabel->"Out[98]=",ExpressionUUID->"57b98a6c-290b-49d3-8b0e-849cfa5386e8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLRead", "[", 
+  RowBox[{
+  "\"\<http://cdn.leafletjs.com/leaflet-0.7/leaflet.js\>\"", ",", 
+   "\"\<ContentType\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.7550064997639513`*^9, 3.755006546470793*^9}},
+ CellLabel->"In[55]:=",ExpressionUUID->"17dab378-d339-4b62-b7cf-2b80d969e81a"],
+
+Cell[BoxData["\<\"application/javascript\"\>"], "Output",
+ CellChangeTimes->{{3.755006507696397*^9, 3.7550065153950872`*^9}, 
+   3.755006547946333*^9},
+ CellLabel->"Out[55]=",ExpressionUUID->"7f41e344-aa03-4ce9-9cc0-7c6de28c26a3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLRead", "[", 
+  RowBox[{
+  "\"\<http://cdn.leafletjs.com/leaflet-0.7/leaflet.css\>\"", ",", 
+   "\"\<ContentType\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.7550064997639513`*^9, 3.755006546470793*^9}, {
+  3.7550692195546236`*^9, 3.7550692374081545`*^9}},
+ CellLabel->"In[97]:=",ExpressionUUID->"2d3b092e-9fb9-45f1-aa96-fe41448401bb"],
+
+Cell[BoxData["\<\"text/css\"\>"], "Output",
+ CellChangeTimes->{3.7550692389986525`*^9},
+ CellLabel->"Out[97]=",ExpressionUUID->"a3df95eb-3c41-4cac-a2f5-fa9d7a2ce9fc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudDeploy", "[", 
+  RowBox[{
+   RowBox[{"ExportForm", "[", 
+    RowBox[{
+     RowBox[{"URLRead", "[", 
+      RowBox[{
+      "\"\<http://cdn.leafletjs.com/leaflet-0.7/leaflet.css\>\"", ",", 
+       "\"\<Body\>\""}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\"\<String\>\"", ",", "\"\<text/css\>\""}], "}"}]}], "]"}], 
+   ",", "\"\<https://www.wolframcloud.com/objects/58916624-0d74-45c6-bb1b-\
+d3d7e1e6b28a\>\"", ",", 
+   RowBox[{"Permissions", "\[Rule]", "\"\<Public\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7550059780322943`*^9, 3.7550061217642813`*^9}, {
+   3.755006567265643*^9, 3.7550065975543227`*^9}, {3.7550066354578433`*^9, 
+   3.755006662314911*^9}, {3.7550067448980722`*^9, 3.755006814238124*^9}, {
+   3.7550068489064274`*^9, 3.7550068858543053`*^9}, {3.755007023953618*^9, 
+   3.7550070312529454`*^9}, 3.7550071592234144`*^9, {3.755007324021804*^9, 
+   3.7550073993407946`*^9}, {3.755069267872164*^9, 3.755069325890995*^9}},
+ CellLabel->
+  "In[100]:=",ExpressionUUID->"0554af84-6a93-4666-b63c-640f25e6463c"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/objects/58916624-0d74-45c6-bb1b-\
+d3d7e1e6b28a\"",
+     "https://www.wolframcloud.com/objects/58916624-0d74-45c6-bb1b-\
+d3d7e1e6b28a"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/objects/58916624-0d74-45c6-bb1b-d3d7e1e6b28a"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{{3.755069304386161*^9, 3.755069328373904*^9}},
+ CellLabel->
+  "Out[100]=",ExpressionUUID->"caed6cc8-a9f3-4881-8cd1-e7a9f826d388"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Clear", "[", "mapControl", "]"}]], "Input",
+ CellChangeTimes->{{3.755006094685813*^9, 3.7550060966603127`*^9}, {
+  3.755007419668933*^9, 3.755007424431394*^9}},
+ CellLabel->
+  "In[140]:=",ExpressionUUID->"888ed3ed-8746-4eca-ae68-b45e773dd97f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"mapControl", "[", 
+   RowBox[{"name_", ",", " ", "defaultPosition_", ",", " ", 
+    RowBox[{"defaultZoom_:", "15"}]}], "]"}], ":=", 
+  RowBox[{"Function", "[", 
+   RowBox[{"EmbeddedHTML", "@", 
+    RowBox[{
+     RowBox[{
+     "StringTemplate", "[", 
+      "\"\<\n<input type=\\\"hidden\\\" id=\\\"mapField\\\" name=\\\"`Name`\\\
+\">\n<link\nrel=\\\"stylesheet\\\"\n\
+href=\\\"https://unpkg.com/leaflet@1.3.4/dist/leaflet.css\\\"\n/>\n\n<div id=\
+\\\"selectionMap\\\" style=\\\"width:400px;height:400px;\\\"></div>\n\n\
+<script\nsrc=\\\"https://unpkg.com/leaflet@1.3.4/dist/leaflet.js\\\">\n\
+</script>\n\n<script>\nfield = document.getElementById(\\\"mapField\\\")\n\
+defaultPosition = [`Latitude`,`Longitude`]\nvar map = \
+L.map(\\\"selectionMap\\\").setView(defaultPosition, `DefaultZoom`);\n\
+field.value=[map.getCenter().lat,map.getCenter().lng]\nmapLink ='<a \
+href=\\\"https://openstreetmap.org\\\">OpenStreetMap</a>';\nL.tileLayer(\n\t\
+'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {\n\tattribution: 'Map \
+data &copy;'  + mapLink,\n\tmaxZoom: 18\n\t}).addTo(map);\nvar marker = \
+L.marker(defaultPosition,\n{draggable: false})\n.addTo(map);\n\n\
+map.on('move',function(ev){\n\t\
+field.value=[map.getCenter().lat,map.getCenter().lng]\n\t\
+marker.setLatLng(map.getCenter())\n})\nif(navigator.geolocation) {\n\t\
+navigator.geolocation.getCurrentPosition(function(p){map.panTo([p.coords.\
+latitude,p.coords.longitude])}, \n\tconsole.log, {enableHighAccuracy: true});\
+\n}\n\n</script>\n\n\>\"", "]"}], "[", 
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{"\"\<Name\>\"", "\[Rule]", " ", "name"}], ",", " ", 
+       RowBox[{"\"\<Latitude\>\"", "\[Rule]", 
+        RowBox[{"defaultPosition", "[", 
+         RowBox[{"[", 
+          RowBox[{"1", ",", "1"}], "]"}], "]"}]}], ",", 
+       RowBox[{"\"\<Longitude\>\"", "\[Rule]", 
+        RowBox[{"defaultPosition", "[", 
+         RowBox[{"[", 
+          RowBox[{"1", ",", "2"}], "]"}], "]"}]}], ",", 
+       RowBox[{"\"\<DefaultZoom\>\"", "\[Rule]", "defaultZoom"}]}], "|>"}], 
+     "]"}]}], "]"}]}]], "Code",
+ CellChangeTimes->{{3.7547556242736526`*^9, 3.7547556526670303`*^9}, {
+   3.7547556880035453`*^9, 3.7547558287343636`*^9}, {3.754755931617824*^9, 
+   3.754755943967532*^9}, {3.7547560964388022`*^9, 3.7547561122545643`*^9}, {
+   3.7547561765245037`*^9, 3.754756295658632*^9}, {3.7547564382195272`*^9, 
+   3.754756500322146*^9}, {3.7547565768417587`*^9, 3.7547565808447356`*^9}, 
+   3.754759612090109*^9, 3.7547603304208374`*^9, {3.7547603649457064`*^9, 
+   3.754760489268862*^9}, {3.754760785615137*^9, 3.7547608022202206`*^9}, 
+   3.7547610264954915`*^9, {3.754761058996944*^9, 3.754761071642799*^9}, {
+   3.754762699805287*^9, 3.754762732902437*^9}, {3.7547628013505516`*^9, 
+   3.754762803564494*^9}, {3.7547628384125447`*^9, 3.754762849125062*^9}, {
+   3.7547630622179513`*^9, 3.7547630756317644`*^9}, {3.7547632063454247`*^9, 
+   3.754763226313983*^9}, {3.7547637841792603`*^9, 3.754763812227195*^9}, {
+   3.7547640489506598`*^9, 3.7547640596360626`*^9}, {3.754764604380598*^9, 
+   3.754764628592801*^9}, 3.7547878724594245`*^9, {3.755005388388224*^9, 
+   3.7550054366232653`*^9}, 3.7550056227069783`*^9, {3.755006152179247*^9, 
+   3.7550062900499506`*^9}, {3.755006336653097*^9, 3.7550063490835094`*^9}, {
+   3.7550079025327787`*^9, 3.755007931989925*^9}, {3.7550080565231657`*^9, 
+   3.7550080582839575`*^9}, {3.755008201043754*^9, 3.7550082010666823`*^9}, {
+   3.755008494136826*^9, 3.7550085096669855`*^9}, {3.75500855360888*^9, 
+   3.7550085576502*^9}, 3.755009265735854*^9, 3.7550671413033314`*^9, 
+   3.7550672447266455`*^9, 3.7550673064046717`*^9, {3.755067796356796*^9, 
+   3.7550678046062183`*^9}, {3.7550678868996925`*^9, 3.7550678981229067`*^9}, 
+   3.7550680480007544`*^9, {3.755068116544648*^9, 3.7550681212324843`*^9}, {
+   3.755068213892836*^9, 3.7550682214181194`*^9}, 3.75506862608353*^9, {
+   3.755068712335134*^9, 3.7550687188102827`*^9}, {3.755068757965624*^9, 
+   3.7550687612918344`*^9}, {3.755069177134183*^9, 3.7550691885872416`*^9}, 
+   3.755069348914152*^9, 3.7550694042780476`*^9, {3.7550699495884275`*^9, 
+   3.755070009230033*^9}, {3.7550700433209877`*^9, 3.7550700648851857`*^9}, {
+   3.755070102367833*^9, 3.7550701198002644`*^9}, {3.7550702388960342`*^9, 
+   3.755070246418978*^9}, {3.755071305362593*^9, 3.755071334160256*^9}, {
+   3.75507137038832*^9, 3.755071381149785*^9}, {3.7550714424911604`*^9, 
+   3.7550714838843503`*^9}, {3.7550715287582283`*^9, 3.7550715714815645`*^9}, 
+   3.755071619523692*^9, {3.7550724084301343`*^9, 3.755072424257885*^9}, {
+   3.7550728069660997`*^9, 3.755072818100292*^9}, {3.755072851762697*^9, 
+   3.755072879815527*^9}, {3.755073028507571*^9, 3.7550731269350634`*^9}, {
+   3.7550731746302347`*^9, 3.7550732210486145`*^9}, {3.7550733010549617`*^9, 
+   3.75507335583184*^9}, {3.755073500401663*^9, 3.755073502479623*^9}, {
+   3.7550735340928783`*^9, 3.7550735363944044`*^9}, {3.7550736034120083`*^9, 
+   3.75507367556009*^9}, {3.755073791872815*^9, 3.755073813725768*^9}, {
+   3.7550738829821496`*^9, 3.755073889254836*^9}, {3.7550740024278984`*^9, 
+   3.7550740277046385`*^9}, {3.7550741185871735`*^9, 3.755074132798379*^9}, {
+   3.7550742409677525`*^9, 3.755074262755949*^9}, {3.755074526329279*^9, 
+   3.7550745600295973`*^9}, {3.755074663904519*^9, 3.7550746708013897`*^9}, {
+   3.755074800733176*^9, 3.75507484875871*^9}, {3.7550749065748177`*^9, 
+   3.755074909079792*^9}, {3.755074988743658*^9, 3.755075027936227*^9}, {
+   3.755075191040399*^9, 3.755075198183181*^9}, {3.7550752373593016`*^9, 
+   3.7550754011217957`*^9}},
+ CellLabel->
+  "In[181]:=",ExpressionUUID->"58663906-4410-4354-b653-eee3b5410da1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudDeploy", "[", 
+  RowBox[{
+   RowBox[{"FormFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<location\>\"", "\[Rule]", 
+       RowBox[{"<|", "\n", "\t", 
+        RowBox[{
+         RowBox[{
+         "\"\<Label\>\"", "\[Rule]", 
+          "\"\<Drag the map so the marker points at your location\>\""}], ",",
+          "\n", "\t", 
+         RowBox[{
+         "\"\<Interpreter\>\"", "\[Rule]", 
+          "\"\<StructuredGeoCoordinates\>\""}], ",", "\n", "\t", 
+         RowBox[{"\"\<Control\>\"", "\[Rule]", 
+          RowBox[{"mapControl", "[", 
+           RowBox[{"\"\<location\>\"", ",", 
+            RowBox[{
+             TemplateBox[{"\"Champaign\"",RowBox[{"Entity", "[", 
+                 RowBox[{"\"City\"", ",", 
+                   RowBox[{"{", 
+                    
+                    RowBox[{
+                    "\"Champaign\"", ",", "\"Illinois\"", ",", 
+                    "\"UnitedStates\""}], "}"}]}], "]"}],
+               "\"Entity[\\\"City\\\", {\\\"Champaign\\\", \\\"Illinois\\\", \
+\\\"UnitedStates\\\"}]\"","\"city\""},
+              "Entity"], "[", "\"\<Position\>\"", "]"}]}], "]"}]}]}], 
+        "|>"}]}], "}"}], ",", "\n", "\t", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"#location", ",", 
+        RowBox[{"GeoGraphics", "[", 
+         RowBox[{
+          RowBox[{"GeoMarker", "[", "#location", "]"}], ",", 
+          RowBox[{"GeoRange", "\[Rule]", 
+           RowBox[{"Quantity", "[", 
+            RowBox[{"1", ",", "\"\<Miles\>\""}], "]"}]}]}], "]"}]}], "}"}], 
+      "&"}]}], "]"}], ",", "\n", "\t", 
+   "\"\<https://www.wolframcloud.com/objects/b0aa199f-a39b-446f-b19b-\
+53ccd4a14847\>\"", ",", 
+   RowBox[{"Permissions", "\[Rule]", "\"\<Public\>\""}]}], "]"}]], "Code",
+ CellChangeTimes->{{3.755005057285999*^9, 3.7550051014054675`*^9}, 
+   3.755005484418192*^9, {3.755006957899953*^9, 3.755006968451953*^9}, {
+   3.7550674668146205`*^9, 3.7550674734646406`*^9}, {3.7550678243275113`*^9, 
+   3.7550678259761467`*^9}, {3.7550687646989117`*^9, 
+   3.7550687749571686`*^9}, {3.7550728851652927`*^9, 3.75507288950241*^9}, {
+   3.7550746344340553`*^9, 3.7550746372894945`*^9}},
+ CellLabel->
+  "In[182]:=",ExpressionUUID->"213b9de2-ca40-4d23-968b-e73f9eb30fe2"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/objects/b0aa199f-a39b-446f-b19b-\
+53ccd4a14847\"",
+     "https://www.wolframcloud.com/objects/b0aa199f-a39b-446f-b19b-\
+53ccd4a14847"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/objects/b0aa199f-a39b-446f-b19b-53ccd4a14847"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{
+  3.755006364559511*^9, 3.755006902427066*^9, 3.7550069730823126`*^9, 
+   3.7550074332693043`*^9, 3.7550079449030995`*^9, 3.7550085185393023`*^9, 
+   3.7550092715625963`*^9, 3.7550671653268127`*^9, 3.7550674768402796`*^9, 
+   3.755067828315748*^9, {3.755068028895051*^9, 3.7550680537787995`*^9}, 
+   3.7550686337261496`*^9, 3.75506872435254*^9, {3.7550687689296603`*^9, 
+   3.7550687950833044`*^9}, 3.755069357823313*^9, 3.755069411775627*^9, 
+   3.755070014583378*^9, 3.755070124827961*^9, 3.7550702517520013`*^9, 
+   3.755071343236622*^9, 3.7550713872185283`*^9, 3.755071424042033*^9, {
+   3.7550714642091584`*^9, 3.755071489493814*^9}, 3.7550715408869686`*^9, 
+   3.7550715768452415`*^9, 3.7550716304963903`*^9, 3.755072432187972*^9, 
+   3.7550732286518793`*^9, 3.7550733688632345`*^9, 3.755073470943309*^9, 
+   3.755073509656827*^9, 3.7550736158700123`*^9, 3.755073710321619*^9, 
+   3.755073818993572*^9, 3.755073895183695*^9, 3.755074036782051*^9, 
+   3.7550741408008966`*^9, 3.755074269578307*^9, 3.7550745689426374`*^9, 
+   3.7550746460433965`*^9, 3.7550746774984055`*^9, 3.755074855982421*^9, 
+   3.7550754081278205`*^9},
+ CellLabel->
+  "Out[182]=",ExpressionUUID->"c8e069c8-37f3-482a-ac57-f8f1ed2274ea"]
+}, Open  ]],
+
+Cell[BoxData[" "], "Input",
+ CellChangeTimes->{
+  3.7550724715567355`*^9},ExpressionUUID->"19bdf91f-ae7e-4ada-b454-\
+d14bd3cfb737"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudDeploy", "[", 
+  RowBox[{"mapControl", "[", 
+   RowBox[{
+    TemplateBox[{"\"Champaign\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"City\"", ",", 
+          RowBox[{"{", 
+            
+            RowBox[{"\"Champaign\"", ",", "\"Illinois\"", ",", 
+              "\"UnitedStates\""}], "}"}]}], "]"}],
+      "\"Entity[\\\"City\\\", {\\\"Champaign\\\", \\\"Illinois\\\", \
+\\\"UnitedStates\\\"}]\"","\"city\""},
+     "Entity"], "[", "\"\<Position\>\"", "]"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7547609109819765`*^9, 3.754760942481713*^9}, 
+   3.754761063284022*^9},
+ CellLabel->"In[14]:=",ExpressionUUID->"58ec300b-e062-4aaf-87d7-46cefe8b4c17"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/objects/24daf553-83c9-4bb9-b047-\
+dfca37e26435\"",
+     "https://www.wolframcloud.com/objects/24daf553-83c9-4bb9-b047-\
+dfca37e26435"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/objects/24daf553-83c9-4bb9-b047-dfca37e26435"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{{3.7547609284671965`*^9, 3.754760945055961*^9}, {
+  3.7547610378146152`*^9, 3.7547610911579766`*^9}},
+ CellLabel->"Out[14]=",ExpressionUUID->"898777c1-84bb-459c-8f47-57d59f54414d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudDeploy", "[", 
+  RowBox[{"FormFunction", "[", 
+   RowBox[{"{", 
+    RowBox[{"\"\<location\>\"", "\[Rule]", 
+     RowBox[{"<|", "\n", "\t", 
+      RowBox[{
+       RowBox[{
+       "\"\<Label\>\"", "\[Rule]", 
+        "\"\<Drag the map so the marker points at your location\>\""}], ",", 
+       "\n", "\t", 
+       RowBox[{
+       "\"\<Interpreter\>\"", "\[Rule]", "\"\<StructuredGeoCoordinates\>\""}],
+        ",", "\n", "\t", 
+       RowBox[{"\"\<Control\>\"", "\[Rule]", 
+        RowBox[{"mapControl", "[", 
+         RowBox[{
+          TemplateBox[{"\"Champaign\"",RowBox[{"Entity", "[", 
+              RowBox[{"\"City\"", ",", 
+                RowBox[{"{", 
+                  
+                  RowBox[{
+                   "\"Champaign\"", ",", "\"Illinois\"", ",", 
+                    "\"UnitedStates\""}], "}"}]}], "]"}],
+            "\"Entity[\\\"City\\\", {\\\"Champaign\\\", \\\"Illinois\\\", \
+\\\"UnitedStates\\\"}]\"","\"city\""},
+           "Entity"], "[", "\"\<Position\>\"", "]"}], "]"}]}]}], "|>"}]}], 
+    "}"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7547630928537946`*^9, 3.754763106065008*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"af07236b-c7b6-4032-ae6f-cd5d484af53d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/objects/5dc81fe1-04cf-4cf2-91af-\
+a572cb82adfc\"",
+     "https://www.wolframcloud.com/objects/5dc81fe1-04cf-4cf2-91af-\
+a572cb82adfc"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/objects/5dc81fe1-04cf-4cf2-91af-a572cb82adfc"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.754763125057104*^9, 3.7547632409617825`*^9, 
+  3.7547878823509083`*^9},
+ CellLabel->"Out[22]=",ExpressionUUID->"eb205378-e7f8-4edc-b06b-6e9a7e42154e"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Try with Google maps library", "Section",
+ CellChangeTimes->{{3.755005156437422*^9, 
+  3.755005163445957*^9}},ExpressionUUID->"1367d93e-e826-4cb9-8d84-\
+6062041d4a3c"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"mapControl", "[", 
+   RowBox[{"name_", ",", " ", "defaultPosition_", ",", " ", 
+    RowBox[{"defaultZoom_:", "15"}]}], "]"}], ":=", " ", 
+  RowBox[{"Function", "[", 
+   RowBox[{"EmbeddedHTML", "@", 
+    RowBox[{
+     RowBox[{
+     "StringTemplate", "[", 
+      "\"\<\n<input type=\\\"hidden\\\" id=\\\"mapField\\\" name=\\\"`Name`\\\
+\">\n<div id=\\\"selectionMap\\\" \
+style=\\\"width:100%;height:400px;\\\"></div>\n<script>\nfield = \
+document.getElementById(\\\"mapField\\\")\nfunction initMap() {\n\t\
+defaultPosition = {lat: `Latitude`, lng: `Longitude`}\n\tvar map = new \
+google.maps.Map(\n\t\tdocument.getElementById(\\\"selectionMap\\\"),\n\t\t\
+{zoom: `DefaultZoom`, \n\t\tcenter: defaultPosition,\n\t\tmapTypeID: \
+\\\"OSM\\\",\n\t\tmapTypeControl: false,\n\t\tstreetViewControl: false\n\t\t\
+})\n\tvar marker = new google.maps.Marker({\n\t\tposition: defaultPosition,\n\
+\t\tdraggable:false,\n\t\tmap: map\n\t})\n\tfield.value = marker.position\n\t\
+google.maps.event.addListener(\n\t\tmap,\n\t\t\\\"center_changed\\\",\n\t\t\
+function() {\n\n\t\t\tmarker.setPosition(map.getCenter())\n\t\t\tfield.value \
+= marker.position\n\t\t}\n\t)\n\n//Define OSM map type pointing at the \
+OpenStreetMap tile server\n            map.mapTypes.set(\\\"OSM\\\", new \
+google.maps.ImageMapType({\n                getTileUrl: function(coord, zoom) \
+{\n                    // \\\"Wrap\\\" x (longitude) at 180th meridian \
+properly\n                    // NB: Don't touch coord.x: because coord param \
+is by reference, and changing its x property breaks something in Google's lib\
+\n                    var tilesPerGlobe = 1 << zoom;\n                    var \
+x = coord.x % tilesPerGlobe;\n                    if (x < 0) {\n              \
+          x = tilesPerGlobe+x;\n                    }\n                    // \
+Wrap y (latitude) in a like manner if you want to enable vertical infinite \
+scrolling\n\n                    return \\\"https://tile.openstreetmap.org/\\\
+\" + zoom + \\\"/\\\" + x + \\\"/\\\" + coord.y + \\\".png\\\";\n             \
+   },\n                tileSize: new google.maps.Size(256, 256),\n            \
+    name: \\\"OpenStreetMap\\\",\n                maxZoom: 18\n            \
+}));\n\n\tfunction showPosition(position) {\n\t\tcoords = {\n\t\t\tlat: \
+position.coords.latitude,\n\t\t\tlng: position.coords.longitude\n\t\t}\n\t\t\
+marker.setPosition(coords)\n\t\tmap.panTo(coords)\n\t\tfield.value = \
+marker.position\n\t}\n\tif(navigator.geolocation) {\n\t\t\
+navigator.geolocation.getCurrentPosition(showPosition, console.log, \
+{enableHighAccuracy: true});\n\t}\n}\n</script>\n<script async defer \
+src=\\\"https://maps.googleapis.com/maps/api/js?sensor=false&callback=initMap\
+\\\">\n</script>\n\>\"", "]"}], "[", 
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{"\"\<Name\>\"", "\[Rule]", "name"}], ",", 
+       RowBox[{"\"\<Latitude\>\"", "\[Rule]", 
+        RowBox[{"defaultPosition", "[", 
+         RowBox[{"[", 
+          RowBox[{"1", ",", "1"}], "]"}], "]"}]}], ",", 
+       RowBox[{"\"\<Longitude\>\"", "\[Rule]", 
+        RowBox[{"defaultPosition", "[", 
+         RowBox[{"[", 
+          RowBox[{"1", ",", "2"}], "]"}], "]"}]}], ",", 
+       RowBox[{"\"\<DefaultZoom\>\"", "\[Rule]", "defaultZoom"}], ",", 
+       RowBox[{"\"\<apiKey\>\"", "\[Rule]", " ", "apiKey"}]}], "|>"}], 
+     "]"}]}], "]"}]}]], "Code",
+ CellChangeTimes->{{3.7550045660937567`*^9, 3.755004572863484*^9}, {
+  3.755004761460438*^9, 3.7550047977419147`*^9}, {3.755004852709882*^9, 
+  3.75500495559376*^9}, {3.7550050165511956`*^9, 3.755005026639713*^9}},
+ CellLabel->"In[33]:=",ExpressionUUID->"a1d708f4-92ff-4bdb-956a-507e0bb6ebf5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudDeploy", "[", 
+  RowBox[{"FormFunction", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\"\<location\>\"", "\[Rule]", 
+      RowBox[{"<|", "\n", "\t", 
+       RowBox[{
+        RowBox[{
+        "\"\<Label\>\"", "\[Rule]", 
+         "\"\<Drag the map so the marker points at your location\>\""}], ",", 
+        "\n", "\t", 
+        RowBox[{
+        "\"\<Interpreter\>\"", "\[Rule]", 
+         "\"\<StructuredGeoCoordinates\>\""}], ",", "\n", "\t", 
+        RowBox[{"\"\<Control\>\"", "\[Rule]", 
+         RowBox[{"mapControl", "[", 
+          RowBox[{"\"\<location\>\"", ",", 
+           RowBox[{
+            TemplateBox[{"\"Champaign\"",RowBox[{"Entity", "[", 
+                RowBox[{"\"City\"", ",", 
+                  RowBox[{"{", 
+                    
+                    RowBox[{
+                    "\"Champaign\"", ",", "\"Illinois\"", ",", 
+                    "\"UnitedStates\""}], "}"}]}], "]"}],
+              "\"Entity[\\\"City\\\", {\\\"Champaign\\\", \\\"Illinois\\\", \
+\\\"UnitedStates\\\"}]\"","\"city\""},
+             "Entity"], "[", "\"\<Position\>\"", "]"}]}], "]"}]}]}], "|>"}]}],
+      "}"}], ",", "\n", "\t", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"#location", ",", 
+       RowBox[{"GeoGraphics", "[", 
+        RowBox[{
+         RowBox[{"GeoMarker", "[", "#location", "]"}], ",", 
+         RowBox[{"GeoRange", "\[Rule]", 
+          RowBox[{"Quantity", "[", 
+           RowBox[{"1", ",", "\"\<Miles\>\""}], "]"}]}]}], "]"}]}], "}"}], 
+     "&"}]}], "]"}], "]"}]], "Code",
+ CellChangeTimes->{{3.755005057285999*^9, 3.7550051014054675`*^9}, 
+   3.755005484418192*^9},
+ CellLabel->"In[50]:=",ExpressionUUID->"28f7fb1a-ddc4-4514-be28-57ea77a8e8f3"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/objects/b5008330-3e49-4874-923b-\
+451af7c8de65\"",
+     "https://www.wolframcloud.com/objects/b5008330-3e49-4874-923b-\
+451af7c8de65"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/objects/b5008330-3e49-4874-923b-451af7c8de65"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.7550051039363003`*^9, 3.7550054521953096`*^9, 
+  3.7550054875099306`*^9, 3.755005634022973*^9, 3.7550062960305753`*^9},
+ CellLabel->"Out[50]=",ExpressionUUID->"bc2d1b87-eca1-4d45-b8f7-7a8bd79442a8"]
+}, Open  ]]
 }, Open  ]]
 },
-WindowSize->{960, 781},
+WindowSize->{816, 781},
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
 StyleDefinitions->"Default.nb"
@@ -2502,22 +3061,64 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 2448, 48, 807, "Code",ExpressionUUID->"240840f6-19a5-4704-adc5-dd08376cbf15"],
+Cell[558, 20, 2453, 48, 807, "Code",ExpressionUUID->"240840f6-19a5-4704-adc5-dd08376cbf15"],
 Cell[CellGroupData[{
-Cell[3031, 72, 2218, 44, 198, "Code",ExpressionUUID->"afa7e9ef-de6d-4883-86ca-3bbb8f3b8f75"],
-Cell[5252, 118, 765, 17, 35, "Output",ExpressionUUID->"fa6ce149-a4aa-44ce-b00c-402d23262231"]
+Cell[3036, 72, 2958, 60, 227, "Code",ExpressionUUID->"afa7e9ef-de6d-4883-86ca-3bbb8f3b8f75"],
+Cell[5997, 134, 563, 13, 35, "Output",ExpressionUUID->"617fa6e6-c8b0-476e-bf74-4cfaf546a485"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6054, 140, 662, 14, 43, "Input",ExpressionUUID->"3e067d3a-5d93-4ef5-bc6c-05221b977f54"],
-Cell[6719, 156, 139068, 2308, 437, "Output",ExpressionUUID->"a5f38826-c1cd-4dce-b09c-e22a7c526c88"]
+Cell[6597, 152, 662, 14, 43, "Input",ExpressionUUID->"3e067d3a-5d93-4ef5-bc6c-05221b977f54"],
+Cell[7262, 168, 139068, 2308, 437, "Output",ExpressionUUID->"a5f38826-c1cd-4dce-b09c-e22a7c526c88"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[145824, 2469, 379, 7, 43, "Input",ExpressionUUID->"bdd0744c-0095-48b0-bbff-9e9ce67f3ad2"],
-Cell[146206, 2478, 309, 7, 32, "Output",ExpressionUUID->"b318c924-dbcb-4942-82f6-1e4febde453e"]
+Cell[146367, 2481, 379, 7, 43, "Input",ExpressionUUID->"bdd0744c-0095-48b0-bbff-9e9ce67f3ad2"],
+Cell[146749, 2490, 309, 7, 32, "Output",ExpressionUUID->"b318c924-dbcb-4942-82f6-1e4febde453e"]
+}, Open  ]],
+Cell[147073, 2500, 214, 3, 28, "Input",ExpressionUUID->"d35bfd3e-4b7e-4cc4-b43d-8587b9a19d0e"],
+Cell[CellGroupData[{
+Cell[147312, 2507, 163, 3, 67, "Section",ExpressionUUID->"49591914-9f1a-4602-bc23-d387816aa100"],
+Cell[147478, 2512, 154, 3, 28, "Input",ExpressionUUID->"ea981d87-29cd-4d1b-97b3-b818a1971d6a"],
+Cell[CellGroupData[{
+Cell[147657, 2519, 1052, 21, 86, "Input",ExpressionUUID->"7cd5f846-be42-4898-9c0b-d15f97a36b71"],
+Cell[148712, 2542, 680, 15, 35, "Output",ExpressionUUID->"57b98a6c-290b-49d3-8b0e-849cfa5386e8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[149429, 2562, 309, 6, 28, "Input",ExpressionUUID->"17dab378-d339-4b62-b7cf-2b80d969e81a"],
+Cell[149741, 2570, 230, 3, 32, "Output",ExpressionUUID->"7f41e344-aa03-4ce9-9cc0-7c6de28c26a3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[150008, 2578, 363, 7, 28, "Input",ExpressionUUID->"2d3b092e-9fb9-45f1-aa96-fe41448401bb"],
+Cell[150374, 2587, 166, 2, 32, "Output",ExpressionUUID->"a3df95eb-3c41-4cac-a2f5-fa9d7a2ce9fc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[150577, 2594, 1058, 21, 86, "Input",ExpressionUUID->"0554af84-6a93-4666-b63c-640f25e6463c"],
+Cell[151638, 2617, 565, 14, 35, "Output",ExpressionUUID->"caed6cc8-a9f3-4881-8cd1-e7a9f826d388"]
+}, Open  ]],
+Cell[152218, 2634, 267, 5, 28, "Input",ExpressionUUID->"888ed3ed-8746-4eca-ae68-b45e773dd97f"],
+Cell[152488, 2641, 5688, 90, 753, "Code",ExpressionUUID->"58663906-4410-4354-b653-eee3b5410da1"],
+Cell[CellGroupData[{
+Cell[158201, 2735, 2238, 51, 190, "Code",ExpressionUUID->"213b9de2-ca40-4d23-968b-e73f9eb30fe2"],
+Cell[160442, 2788, 1649, 30, 35, "Output",ExpressionUUID->"c8e069c8-37f3-482a-ac57-f8f1ed2274ea"]
+}, Open  ]],
+Cell[162106, 2821, 131, 3, 28, "Input",ExpressionUUID->"19bdf91f-ae7e-4ada-b454-d14bd3cfb737"],
+Cell[CellGroupData[{
+Cell[162262, 2828, 683, 15, 43, "Input",ExpressionUUID->"58ec300b-e062-4aaf-87d7-46cefe8b4c17"],
+Cell[162948, 2845, 616, 14, 35, "Output",ExpressionUUID->"898777c1-84bb-459c-8f47-57d59f54414d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[163601, 2864, 1227, 29, 111, "Input",ExpressionUUID->"af07236b-c7b6-4032-ae6f-cd5d484af53d"],
+Cell[164831, 2895, 588, 14, 35, "Output",ExpressionUUID->"eb205378-e7f8-4edc-b06b-6e9a7e42154e"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[165468, 2915, 173, 3, 67, "Section",ExpressionUUID->"1367d93e-e826-4cb9-8d84-6062041d4a3c"],
+Cell[165644, 2920, 3685, 61, 1239, "Code",ExpressionUUID->"a1d708f4-92ff-4bdb-956a-507e0bb6ebf5"],
+Cell[CellGroupData[{
+Cell[169354, 2985, 1706, 42, 161, "Code",ExpressionUUID->"28f7fb1a-ddc4-4514-be28-57ea77a8e8f3"],
+Cell[171063, 3029, 636, 14, 35, "Output",ExpressionUUID->"bc2d1b87-eca1-4d45-b8f7-7a8bd79442a8"]
+}, Open  ]]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
